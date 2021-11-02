@@ -111,6 +111,9 @@ public class AM2WorldDecorator implements IWorldGenerator{
 			break;
 		case 1:
 			break;
+		case 7:
+			generateTwilight(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
+			break;
 		default:
 			generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
 		}
@@ -120,7 +123,7 @@ public class AM2WorldDecorator implements IWorldGenerator{
 		generateOre(sunstone, 20, world, random, 5, 120, chunkX, chunkZ);
 	}
 
-	public void generateOverworld(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
+	public void generateTwilight(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
 		generateOre(vinteum, vinteumFrequency, world, random, vinteumMin, vinteumMax, chunkX, chunkZ);
 		generateOre(chimerite, chimeriteFrequency, world, random, chimeriteMin, chimeriteMax, chunkX, chunkZ);
 		generateOre(blueTopaz, topazFrequency, world, random, topazMin, topazMax, chunkX, chunkZ);
@@ -159,6 +162,32 @@ public class AM2WorldDecorator implements IWorldGenerator{
 			int lakeGenY = random.nextInt(128);
 			int lakeGenZ = (chunkZ * 16) + random.nextInt(16) + 8;
 			(new WorldGenEssenceLakes(BlocksCommonProxy.liquidEssence)).generate(world, random, lakeGenX, lakeGenY, lakeGenZ);
+		}
+	}
+
+	public void generateOverworld(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider){
+		generateFlowers(blueOrchid, world, random, chunkX, chunkZ);
+		generateFlowers(desertNova, world, random, chunkX, chunkZ);
+		generateFlowers(tarmaRoot, world, random, chunkX, chunkZ);
+
+		BiomeGenBase biome = world.getBiomeGenForCoords(chunkX << 4, chunkZ << 4);
+		Type[] biomeTypes = BiomeDictionary.getTypesForBiome(biome);
+		boolean typeValid = false;
+		for (Type type : biomeTypes){
+			if (type == Type.BEACH || type == Type.SWAMP || type == Type.JUNGLE || type == Type.PLAINS || type == Type.WATER){
+				typeValid = true;
+			}else if (type == Type.FROZEN){
+				typeValid = false;
+				break;
+			}
+		}
+
+		if (biome != BiomeGenBase.ocean && typeValid && random.nextInt(wakeChance) < 7){
+			generateFlowers(wakebloom, world, random, chunkX, chunkZ);
+		}
+
+		if (random.nextInt(witchChance) == 0){
+			generateTree(witchwoodTree, world, random, chunkX, chunkZ);
 		}
 	}
 

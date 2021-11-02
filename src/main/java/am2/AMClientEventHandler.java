@@ -328,18 +328,22 @@ public class AMClientEventHandler{
 			((EntityShadowHelper)event.entity).onJoinWorld(event.world);
 		}
 	}
-	
+
 	@SubscribeEvent
 	public void onPlayerInteract(PlayerInteractEvent event){
-		if(event.face == -1){
+		if(event.face < 0 || event.face > Facing.offsetsXForSide.length){
 			return;
 		}
-		
-		Block block = event.world.getBlock(event.x + Facing.offsetsXForSide[event.face], event.y + Facing.offsetsYForSide[event.face], event.z + Facing.offsetsZForSide[event.face]);
-		
+
+		int x = event.x + Facing.offsetsXForSide[event.face];
+		int y = event.y + Facing.offsetsYForSide[event.face];
+		int z = event.z + Facing.offsetsZForSide[event.face];
+
+		Block block = event.world.getBlock(x, y, z);
+
 		if (block == BlocksCommonProxy.particleEmitter){
-			TileEntity te = event.world.getTileEntity(event.x + Facing.offsetsXForSide[event.face], event.y + Facing.offsetsYForSide[event.face], event.z + Facing.offsetsZForSide[event.face]);
-			
+			TileEntity te = event.world.getTileEntity(x, y, z);
+
 			if (te != null && te instanceof TileEntityParticleEmitter && !((TileEntityParticleEmitter)te).getShow()){
 				event.setCanceled(true);
 		  }

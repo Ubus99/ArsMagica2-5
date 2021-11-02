@@ -75,7 +75,7 @@ public class Dig implements ISpellComponent{
 		int meta = world.getBlockMetadata(blockx, blocky, blockz);
 
 		int harvestLevel = block.getHarvestLevel(meta);
-		int miningLevel = 2 + SpellUtils.instance.countModifiers(SpellModifiers.MINING_POWER, stack, 0);
+		int miningLevel = 1 + SpellUtils.instance.countModifiers(SpellModifiers.MINING_POWER, stack, 0);
 		if (harvestLevel > miningLevel) return false;
 
 		EntityPlayer casterPlayer = DummyEntityPlayer.fromEntityLiving(caster);

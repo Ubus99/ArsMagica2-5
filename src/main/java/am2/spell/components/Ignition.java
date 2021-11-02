@@ -113,7 +113,7 @@ public class Ignition implements ISpellComponent{
 	public Object[] getRecipeItems(){
 		return new Object[]{
 				new ItemStack(ItemsCommonProxy.rune, 1, ItemsCommonProxy.rune.META_ORANGE),
-				Items.flint_and_steel
+				Items.fire_charge
 		};
 	}
 
