@@ -14,7 +14,7 @@ public abstract class BuffEffect extends PotionEffect{
 	private static float maxExtendDuration = 900; //30 seconds
 
 	public BuffEffect(int buffID, int duration, int amplifier){
-		super(buffID, duration, amplifier > 0 ? amplifier - 1 : amplifier);
+		super(buffID, Math.min(duration, 1638*20), amplifier > 0 ? amplifier - 1 : amplifier);
 		InitialApplication = true;
 		HasNotified = ((duration / 20) > 5) ? false : true; //disable notification for effects that last less than 5 seconds
 	}

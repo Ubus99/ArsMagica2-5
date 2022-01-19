@@ -6,6 +6,7 @@ import am2.api.spell.component.interfaces.ISpellComponent;
 import am2.api.spell.enums.Affinity;
 import am2.api.spell.enums.SpellModifiers;
 import am2.blocks.BlocksCommonProxy;
+import am2.buffs.BuffEffectVanilla;
 import am2.items.ItemsCommonProxy;
 import am2.particles.AMParticle;
 import am2.particles.ParticleFloatUpward;
@@ -17,7 +18,6 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
-import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 import java.util.EnumSet;
@@ -38,7 +38,7 @@ public class Absorption implements ISpellComponent{
 				duration = SpellUtils.instance.modifyDurationBasedOnArmor(caster, duration);
 				if (!world.isRemote)
 					//Apply absorption affect
-					((EntityLivingBase)target).addPotionEffect(new PotionEffect(Potion.field_76444_x.id, duration, SpellUtils.instance.countModifiers(SpellModifiers.BUFF_POWER, stack, 0) * 2));
+					((EntityLivingBase)target).addPotionEffect(new BuffEffectVanilla(Potion.field_76444_x.id, duration, SpellUtils.instance.countModifiers(SpellModifiers.BUFF_POWER, stack, 0) * 2));
 				ExtendedProperties.For((EntityLivingBase)target).setHealCooldown(60);
 				return true;
 			}
