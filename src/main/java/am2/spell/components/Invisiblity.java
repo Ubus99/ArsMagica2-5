@@ -8,6 +8,7 @@ import am2.api.spell.component.interfaces.IRitualInteraction;
 import am2.api.spell.component.interfaces.ISpellComponent;
 import am2.api.spell.enums.Affinity;
 import am2.api.spell.enums.SpellModifiers;
+import am2.buffs.BuffEffectVanilla;
 import am2.buffs.BuffList;
 import am2.items.ItemsCommonProxy;
 import am2.particles.AMParticle;
@@ -20,7 +21,6 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
-import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 import java.util.EnumSet;
@@ -48,7 +48,7 @@ public class Invisiblity implements ISpellComponent, IRitualInteraction{
 			}
 
 			if (!world.isRemote)
-				((EntityLivingBase)target).addPotionEffect(new PotionEffect(Potion.invisibility.id, duration, SpellUtils.instance.countModifiers(SpellModifiers.BUFF_POWER, stack, 0)));
+				((EntityLivingBase)target).addPotionEffect(new BuffEffectVanilla(Potion.invisibility.id, duration, SpellUtils.instance.countModifiers(SpellModifiers.BUFF_POWER, stack, 0)));
 			return true;
 		}
 		return false;

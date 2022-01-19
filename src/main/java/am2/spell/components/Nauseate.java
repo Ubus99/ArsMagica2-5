@@ -3,13 +3,13 @@ package am2.spell.components;
 import am2.api.spell.component.interfaces.ISpellComponent;
 import am2.api.spell.enums.Affinity;
 import am2.api.spell.enums.SpellModifiers;
+import am2.buffs.BuffEffectVanilla;
 import am2.buffs.BuffList;
 import am2.spell.SpellUtils;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
-import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 import java.util.EnumSet;
@@ -45,7 +45,7 @@ public class Nauseate implements ISpellComponent{
 			int z = (int)Math.floor(target.posZ);
 
 			if (!world.isRemote)
-				((EntityLivingBase)target).addPotionEffect(new PotionEffect(Potion.confusion.id, duration, SpellUtils.instance.countModifiers(SpellModifiers.BUFF_POWER, stack, 0)));
+				((EntityLivingBase)target).addPotionEffect(new BuffEffectVanilla(Potion.confusion.id, duration, SpellUtils.instance.countModifiers(SpellModifiers.BUFF_POWER, stack, 0)));
 			return true;
 		}
 		return false;
