@@ -34,7 +34,7 @@ public class Lunar implements ISpellModifier{
 		case DAMAGE:
 			return modifyValueOnTime(world, 2.4f);
 		case DURATION:
-			return modifyValueOnTime(world, 5f);
+			return modifyValueOnTime(world, 3f);
 		case HEALING:
 			return modifyValueOnTime(world, 2f);
 		}

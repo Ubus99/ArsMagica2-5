@@ -22,6 +22,7 @@ import am2.spell.SpellRecipeManager;
 import am2.spell.SpellUtils;
 import am2.spell.SpellValidator;
 import am2.utility.KeyValuePair;
+import com.google.common.collect.Iterables;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -548,8 +549,10 @@ public class TileEntityInscriptionTable extends TileEntity implements IInventory
 
 		ArrayList<ArrayList<ISpellPart>> stages = SpellValidator.splitToStages(currentRecipe);
 		if (stages.size() == 0) return;
-		ArrayList<ISpellPart> currentStage = stages.get(stages.size() - 1);
-		countModifiersInList(currentStage);
+
+		for (ArrayList<ISpellPart> currentStage : stages){
+			countModifiersInList(currentStage);
+		}
 	}
 
 	private void countModifiersInList(ArrayList<ISpellPart> currentStage){
