@@ -39,11 +39,11 @@ public class ManaLink implements ISpellComponent{
 
 	@Override
 	public boolean applyEffectEntity(ItemStack stack, World world, EntityLivingBase caster, Entity target){
-		if (target instanceof EntityLivingBase){
-			ExtendedProperties.For((EntityLivingBase)target).updateManaLink(caster);
-			return true;
-		}
-		return false;
+		if (target instanceof EntityLivingBase && target.getUniqueID() != caster.getUniqueID()){
+            ExtendedProperties.For((EntityLivingBase)target).updateManaLink(caster);
+            return true;
+        }
+        return false;
 	}
 
 	@Override
