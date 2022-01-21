@@ -2332,7 +2332,7 @@
     </block>
     <block id="armor_infuser_index">
       <name>Armor Imbuement Table</name>
-      <desc>The Armor Imbuement Table can be used to attach special imbuements to any armor in Minecraft.  In order to do this, you first need to have the armor equipped.  Mousing over any armor will display a prompt of "Press SHIFT for more information".  Doing so will show you how much XP has been absorbed into the armor.  Armor gains XP when you do.  See #5Mechanics -&gt; Armor XP Infusion#0 for more information on how it works. !d Once your armor has reached at least level 30, you can apply a Tier I imbuement to it.  Simply equip the armor and activate the Armor Imbuement Table.  Place the armor from the equip slots at the bottom of the UI into the active slot.  Available imbuements will appear in colour, unavailable ones will be grayscale.  You can only apply one tier of imbuement per armor piece, so choose wisely!  !d The tier costs are: !l Tier 1: 30 levels !l Tier 2: 42 levels !l Tier 3: 54 levls !l Tier 4: 66 levels !d Each time you imbue the armor, XP is deducted from it to apply the imbuement.</desc>
+      <desc>The Armor Imbuement Table can be used to upgrade the AM armor with special imbuements.  In order to do this, you first need to have the armor equipped.  Mousing over AM armor will display a prompt of "Press SHIFT for more information".  Doing so will show you how much XP has been absorbed into the armor.  Armor gains XP when you do.  See #5Mechanics -&gt; Armor XP Infusion#0 for more information on how it works. !d Once your armor has reached at least level 30, you can apply a Tier I imbuement to it.  Simply equip the armor and activate the Armor Imbuement Table.  Place the armor from the equip slots at the bottom of the UI into the active slot.  Available imbuements will appear in colour, unavailable ones will be grayscale.  You can only apply one tier of imbuement per armor piece, so choose wisely!  !d The tier costs are: !l Tier 1: 30 levels !l Tier 2: 42 levels !l Tier 3: 54 levls !l Tier 4: 66 levels !d Each time you imbue the armor, XP is deducted from it to apply the imbuement.</desc>
 	  <subitem id="armor_infuser">
 		<name>Block Recipe</name>
 		<desc></desc>
@@ -2644,7 +2644,7 @@
     </mechanic>
     <mechanic id="armor_xp_infusion">
       <name>Armor XP Infusion</name>
-      <desc>Whenever you gain XP, any equipped armor will gain some too.  The amount gained is equal to the total amount of XP you just gained divided evenly among all equipped armor pieces.  Any armor can gain XP.  Stored armor XP can be used at an #9Armor Imbuement Table#0.</desc>
+      <desc>Whenever you gain XP, any equipped AM armor will gain some too.  The amount gained is equal to the total amount of XP you just gained divided evenly among all equipped armor pieces.  AM armor can gain XP.  Stored armor XP can be used at an #9Armor Imbuement Table#0.</desc>
       <relatedEntries>armor_infuser</relatedEntries>
     </mechanic>
     <mechanic id="silver_skills">

@@ -277,7 +277,7 @@ public class ArmorHelper{
 	}
 
 	public static void addXPToArmor(float amt, ItemStack armor){
-		if (armor != null && armor.getItem() instanceof ItemArmor){
+		if (armor != null && armor.getItem() instanceof AMArmor){
 			if (!armor.hasTagCompound())
 				armor.setTagCompound(new NBTTagCompound());
 			NBTTagCompound armorProps = (NBTTagCompound)armor.stackTagCompound.getTag(AMArmor.NBT_KEY_AMPROPS);
