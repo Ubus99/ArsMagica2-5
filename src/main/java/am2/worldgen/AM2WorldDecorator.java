@@ -153,15 +153,18 @@ public class AM2WorldDecorator implements IWorldGenerator{
 			generateTree(witchwoodTree, world, random, chunkX, chunkZ);
 		}
 
-		if (random.nextInt(poolChance) == 0){
-			generatePools(world, random, chunkX, chunkZ);
-		}
+		if (AMCore.config.getPoolFrequency() > 0){
+			if (random.nextInt(poolChance) == 0){
+				generatePools(world, random, chunkX, chunkZ);
+			}
+		
 
-		if ((BiomeDictionary.isBiomeOfType(biome, Type.MAGICAL) || BiomeDictionary.isBiomeOfType(biome, Type.FOREST)) && random.nextInt(4) == 0 && TerrainGen.populate(chunkProvider, world, random, chunkX, chunkZ, true, LAKE)){
-			int lakeGenX = (chunkX * 16) + random.nextInt(16) + 8;
-			int lakeGenY = random.nextInt(128);
-			int lakeGenZ = (chunkZ * 16) + random.nextInt(16) + 8;
-			(new WorldGenEssenceLakes(BlocksCommonProxy.liquidEssence)).generate(world, random, lakeGenX, lakeGenY, lakeGenZ);
+			if ((BiomeDictionary.isBiomeOfType(biome, Type.MAGICAL) || BiomeDictionary.isBiomeOfType(biome, Type.FOREST)) && random.nextInt(4) == 0 && TerrainGen.populate(chunkProvider, world, random, chunkX, chunkZ, true, LAKE)){
+				int lakeGenX = (chunkX * 16) + random.nextInt(16) + 8;
+				int lakeGenY = random.nextInt(128);
+				int lakeGenZ = (chunkZ * 16) + random.nextInt(16) + 8;
+				(new WorldGenEssenceLakes(BlocksCommonProxy.liquidEssence)).generate(world, random, lakeGenX, lakeGenY, lakeGenZ);
+			}
 		}
 	}
 
