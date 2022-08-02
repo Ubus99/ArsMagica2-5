@@ -22,6 +22,8 @@ import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
+import cpw.mods.fml.common.Loader;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -293,6 +295,18 @@ public class ItemsCommonProxy{
 		Affinity.NATURE.setRepresentItem(essence, essence.META_NATURE);
 		Affinity.WATER.setRepresentItem(essence, essence.META_WATER);
 
+		if (Loader.isModLoaded("WitchingGadgets")) {
+		natureScytheEnchanted = new ItemStack(scythe);
+		arcaneSpellBookEnchanted = new ItemStack(arcaneSpellbook);
+		winterArmEnchanted = new ItemStack(winterGuardianArm);
+		fireEarsEnchanted = new ItemStack(fireEars);
+		earthArmorEnchanted = new ItemStack(earthGuardianArmor);
+		airSledEnchanted = new ItemStack(airGuardianLower);
+		waterOrbsEnchanted = new ItemStack(waterGuardianOrbs);
+		enderBootsEnchanted = new ItemStack(enderBoots);
+		lightningCharmEnchanted = new ItemStack(lightningCharm);
+		lifeWardEnchanted = new ItemStack(lifeWard);
+		} else{
 		natureScytheEnchanted = AMEnchantmentHelper.soulbindStack(new ItemStack(scythe));
 		arcaneSpellBookEnchanted = AMEnchantmentHelper.soulbindStack(new ItemStack(arcaneSpellbook));
 		winterArmEnchanted = AMEnchantmentHelper.soulbindStack(new ItemStack(winterGuardianArm));
@@ -303,6 +317,7 @@ public class ItemsCommonProxy{
 		enderBootsEnchanted = AMEnchantmentHelper.soulbindStack(new ItemStack(enderBoots));
 		lightningCharmEnchanted = AMEnchantmentHelper.soulbindStack(new ItemStack(lightningCharm));
 		lifeWardEnchanted = AMEnchantmentHelper.soulbindStack(new ItemStack(lifeWard));
+		}
 	}
 
 	private void addItemStackToChestGen(ItemStack stack, int min, int max, int weight, String... categories){

@@ -10,6 +10,7 @@ import am2.playerextensions.SkillData;
 import am2.spell.SkillManager;
 import am2.spell.SkillTreeManager;
 import am2.texture.ResourceManager;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -274,10 +275,10 @@ public class ItemSpellBook extends ArsMagicaItem{
 		itemStack.stackTagCompound.setTag("spell_book_inventory", list);
 
 		ItemStack active = GetActiveItemStack(itemStack);
-		boolean Soulbound = EnchantmentHelper.getEnchantmentLevel(AMEnchantments.soulbound.effectId, itemStack) > 0;
+		 boolean Soulbound = EnchantmentHelper.getEnchantmentLevel(AMEnchantments.soulbound.effectId, itemStack) > 0;
 		if (active != null)
 			AMEnchantmentHelper.copyEnchantments(active, itemStack);
-		if (Soulbound)
+		 if (Soulbound)
 			AMEnchantmentHelper.soulbindStack(itemStack);
 	}
 
@@ -414,7 +415,7 @@ public class ItemSpellBook extends ArsMagicaItem{
 		Map enchantMap = EnchantmentHelper.getEnchantments(enchantBook);
 		for (Object o : enchantMap.keySet()){
 			if (o instanceof Integer){
-				if ((Integer)o == AMCore.proxy.enchantments.soulbound.effectId){
+				if ((!Loader.isModLoaded("WitchingGadgets") && (Integer)o == AMCore.proxy.enchantments.soulbound.effectId)){
 					return true;
 				}
 			}

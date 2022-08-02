@@ -2,6 +2,7 @@ package am2.enchantments;
 
 import am2.AMCore;
 import am2.LogHelper;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -15,7 +16,9 @@ public class AMEnchantments{
 		int defMR = AMCore.config.getConfigurableEnchantmentID("magic_resist", 100);
 
 		Enchantment.addToBookList(magicResist);
+		if (!Loader.isModLoaded("WitchingGadgets")) {
 		Enchantment.addToBookList(soulbound);
+		}
 
 		LanguageRegistry.instance().addStringLocalization("enchantment.magicresist", "en_US", "Magic Resistance");
 		LanguageRegistry.instance().addStringLocalization("enchantment.soulbound", "en_US", "Soulbound");

@@ -5,6 +5,8 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnumEnchantmentType;
 import net.minecraft.item.ItemStack;
 
+import cpw.mods.fml.common.Loader;
+
 public class EnchantmentSoulbound extends Enchantment{
 
 	public EnchantmentSoulbound(int par1, int par2){
@@ -34,6 +36,10 @@ public class EnchantmentSoulbound extends Enchantment{
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack){
+        if (!Loader.isModLoaded("WitchingGadgets")) {
 		return stack != null && stack.getItem() instanceof ItemSpellBook;
+        } else{
+            return false;
+        }
 	}
 }

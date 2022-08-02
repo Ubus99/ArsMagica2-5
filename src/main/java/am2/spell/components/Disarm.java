@@ -28,6 +28,8 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
+import cpw.mods.fml.common.Loader;
+
 import java.util.EnumSet;
 import java.util.Iterator;
 import java.util.Random;
@@ -48,16 +50,17 @@ public class Disarm implements ISpellComponent{
 		if (target instanceof EntityPlayer && (!AMCore.config.getDisarmAffectsPlayers() || (!world.isRemote && !MinecraftServer.getServer().isPVPEnabled())))
 			return false;
 
-		if (target instanceof EntityPlayer && ((EntityPlayer)target).getHeldItem() != null && !target.worldObj.isRemote){
+		if (!Loader.isModLoaded("WitchingGadgets") && target instanceof EntityPlayer && ((EntityPlayer)target).getHeldItem() != null && !target.worldObj.isRemote){
 			if (EnchantmentHelper.getEnchantmentLevel(AMEnchantments.soulbound.effectId, ((EntityPlayer)target).getHeldItem()) > 0)
 				return true;
 			((EntityPlayer)target).dropOneItem(true);
 			return true;
-		}else if (target instanceof EntityMob && ((EntityMob)target).getHeldItem() != null){
+		}else 
+		if (target instanceof EntityMob && ((EntityMob)target).getHeldItem() != null){
 
-			if (EnchantmentHelper.getEnchantmentLevel(AMEnchantments.soulbound.effectId, ((EntityMob)target).getHeldItem()) > 0)
+			if (!Loader.isModLoaded("WitchingGadgets") && EnchantmentHelper.getEnchantmentLevel(AMEnchantments.soulbound.effectId, ((EntityMob)target).getHeldItem()) > 0)
 				return true;
-
+			
 			if (!world.isRemote){
 				EntityItem item = new EntityItem(world);
 				ItemStack dropstack = ((EntityMob)target).getHeldItem().copy();

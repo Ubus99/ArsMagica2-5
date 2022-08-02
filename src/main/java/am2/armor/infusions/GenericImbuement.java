@@ -8,6 +8,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
+import cpw.mods.fml.common.Loader;
+
 import java.util.EnumSet;
 import java.util.UUID;
 
@@ -43,7 +45,9 @@ public class GenericImbuement implements IArmorImbuement{
 		//all armors
 		ImbuementRegistry.instance.registerImbuement(new GenericImbuement(manaRegen, 0, ImbuementTiers.FIRST, new int[]{ImbuementRegistry.SLOT_BOOTS, ImbuementRegistry.SLOT_LEGS, ImbuementRegistry.SLOT_CHEST, ImbuementRegistry.SLOT_HELM}));
 		ImbuementRegistry.instance.registerImbuement(new GenericImbuement(burnoutReduction, 1, ImbuementTiers.FIRST, new int[]{ImbuementRegistry.SLOT_BOOTS, ImbuementRegistry.SLOT_LEGS, ImbuementRegistry.SLOT_CHEST, ImbuementRegistry.SLOT_HELM}));
-		ImbuementRegistry.instance.registerImbuement(new GenericImbuement(soulbound, 31, ImbuementTiers.FIRST, new int[]{ImbuementRegistry.SLOT_BOOTS, ImbuementRegistry.SLOT_LEGS, ImbuementRegistry.SLOT_CHEST, ImbuementRegistry.SLOT_HELM}));
+		if (!Loader.isModLoaded("WitchingGadgets")) {
+			ImbuementRegistry.instance.registerImbuement(new GenericImbuement(soulbound, 31, ImbuementTiers.FIRST, new int[]{ImbuementRegistry.SLOT_BOOTS, ImbuementRegistry.SLOT_LEGS, ImbuementRegistry.SLOT_CHEST, ImbuementRegistry.SLOT_HELM}));
+		}
 
 		//chest
 		ImbuementRegistry.instance.registerImbuement(new GenericImbuement(flickerLure, 3, ImbuementTiers.FIRST, new int[]{ImbuementRegistry.SLOT_CHEST}));

@@ -19,6 +19,8 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.*;
 import net.minecraft.world.World;
 
+import cpw.mods.fml.common.Loader;
+
 import java.util.List;
 
 public class EntityWinterGuardianArm extends EntityLiving{
@@ -83,9 +85,10 @@ public class EntityWinterGuardianArm extends EntityLiving{
 			if (getThrowingEntity() instanceof EntityWinterGuardian){
 				((EntityWinterGuardian)getThrowingEntity()).returnOneArm();
 			}else if (getThrowingEntity() instanceof EntityPlayer && !this.worldObj.isRemote){
-				if (getThrowingEntity().getHealth() <= 0){
+				if (!Loader.isModLoaded("WitchingGadgets") && getThrowingEntity().getHealth() <= 0){
 					PlayerTracker.storeSoulboundItemForRespawn((EntityPlayer)getThrowingEntity(), ItemsCommonProxy.winterArmEnchanted.copy());
-				}else{
+				}else
+				{
 					if (!((EntityPlayer)getThrowingEntity()).inventory.addItemStackToInventory(ItemsCommonProxy.winterArmEnchanted.copy())){
 						EntityItem item = new EntityItem(worldObj);
 						item.setPosition(posX, posY, posZ);

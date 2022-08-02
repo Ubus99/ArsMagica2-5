@@ -14,6 +14,7 @@ import am2.spell.SkillTreeManager;
 import am2.utility.EntityUtilities;
 import am2.utility.WebRequestUtils;
 import cpw.mods.fml.common.FMLLog;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent.PlayerChangedDimensionEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
@@ -181,7 +182,7 @@ public class PlayerTracker{
 		//================================================================================
 		//soulbound items
 		//================================================================================
-		if (soulbound_Storage.containsKey(event.player.getUniqueID())){
+		if (!Loader.isModLoaded("WitchingGadgets") && soulbound_Storage.containsKey(event.player.getUniqueID())){
 			HashMap<Integer, ItemStack> soulboundItems = soulbound_Storage.get(event.player.getUniqueID());
 			for (Integer i : soulboundItems.keySet()){
 				if (i < event.player.inventory.getSizeInventory())
@@ -195,7 +196,9 @@ public class PlayerTracker{
 
 	public void onPlayerDeath(EntityPlayer player){
 		storeExtendedPropertiesForRespawn(player);
+		if (!Loader.isModLoaded("WitchingGadgets")) {
 		storeSoulboundItemsForRespawn(player);
+        }
 	}
 
 	public static void storeExtendedPropertiesForRespawn(EntityPlayer player){

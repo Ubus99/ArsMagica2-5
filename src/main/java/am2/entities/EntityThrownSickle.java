@@ -21,6 +21,8 @@ import net.minecraft.util.MovingObjectPosition.MovingObjectType;
 import net.minecraft.world.World;
 import net.minecraftforge.event.ForgeEventFactory;
 
+import cpw.mods.fml.common.Loader;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -86,9 +88,10 @@ public class EntityThrownSickle extends EntityLiving{
 			((EntityNatureGuardian)getThrowingEntity()).hasSickle = true;
 		}else if (getThrowingEntity() != null && getThrowingEntity() instanceof EntityPlayer){
 			if (!worldObj.isRemote)
-				if (getThrowingEntity().getHealth() <= 0){
+				if (!Loader.isModLoaded("WitchingGadgets") && getThrowingEntity().getHealth() <= 0){
 					PlayerTracker.storeSoulboundItemForRespawn((EntityPlayer)getThrowingEntity(), ItemsCommonProxy.natureScytheEnchanted.copy());
-				}else{
+				}else
+				{
 					if (!((EntityPlayer)getThrowingEntity()).inventory.addItemStackToInventory(ItemsCommonProxy.natureScytheEnchanted.copy())){
 						EntityItem item = new EntityItem(worldObj);
 						item.setPosition(posX, posY, posZ);

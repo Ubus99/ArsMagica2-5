@@ -49,7 +49,7 @@ public class ItemHellCowHorn extends Item{
 	public ItemStack createItemStack(){
 		ItemStack stack = new ItemStack(this, 1, 0);
 		Map map = new LinkedHashMap();
-		map.put(AMEnchantments.soulbound.effectId, 1);
+		// map.put(AMEnchantments.soulbound.effectId, 1);
 		map.put(Enchantment.fireAspect.effectId, 3);
 		EnchantmentHelper.setEnchantments(map, stack);
 		return stack;
