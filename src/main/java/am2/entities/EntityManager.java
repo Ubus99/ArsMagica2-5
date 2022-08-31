@@ -184,7 +184,7 @@ public class EntityManager implements IEntityManager{
 
 		initSpawnsForBiomeTypes(dryads, EnumCreatureType.creature, new Type[]{Type.BEACH, Type.FOREST, Type.MAGICAL, Type.HILLS, Type.JUNGLE, Type.MOUNTAIN, Type.PLAINS}, new Type[]{Type.END, Type.FROZEN, Type.MUSHROOM, Type.NETHER, Type.WASTELAND, Type.SWAMP, Type.DESERT});
 
-		initSpawnsForBiomeTypes(hecates_nonHell, EnumCreatureType.monster, new Type[]{Type.BEACH, Type.DESERT, Type.FOREST, Type.FROZEN, Type.HILLS, Type.JUNGLE, Type.MAGICAL, Type.MOUNTAIN, Type.PLAINS, Type.SWAMP, Type.WASTELAND}, new Type[]{Type.END, Type.NETHER, Type.MUSHROOM});
+		initSpawnsForBiomeTypes(hecates_nonHell, EnumCreatureType.monster, new Type[]{Type.BEACH, Type.DESERT, Type.FOREST, Type.FROZEN, Type.HILLS, Type.JUNGLE, Type.MAGICAL, Type.MOUNTAIN, Type.PLAINS, Type.SWAMP}, new Type[]{Type.END, Type.NETHER, Type.MUSHROOM, Type.DEAD, Type.WASTELAND});
 
 		initSpawnsForBiomeTypes(hecates_hell, EnumCreatureType.monster, new Type[]{Type.NETHER}, new Type[]{Type.MUSHROOM});
 
