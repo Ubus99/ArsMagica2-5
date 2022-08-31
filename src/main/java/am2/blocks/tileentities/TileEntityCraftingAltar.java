@@ -473,6 +473,7 @@ public class TileEntityCraftingAltar extends TileEntityAMPower implements IMulti
 		checkStructure();
 		checkForStartCondition();
 		updateLecternInformation();
+		if (!(worldObj.getTileEntity(xCoord + podiumLocation.getX(), yCoord + podiumLocation.getY(), zCoord + podiumLocation.getZ()) instanceof TileEntityLectern)) return; // crash fix
 		if (isCrafting){
 			checkForEndCondition();
 			updatePowerRequestData();
