@@ -350,7 +350,7 @@
       <name>Transplace</name>
       <desc>Your knowledge of teleportation magic has grown.  You can now switch places with your target.</desc>
       <modifiedBy></modifiedBy>
-	  <relatedEntries>rituals_overview,otherworldly_ritual</relatedEntries>
+      <relatedEntries>rituals_overview,otherworldly_ritual</relatedEntries>
     </component>
     <component id="Mark">
       <name>Mark</name>
@@ -939,64 +939,64 @@
       <subitem id="chargefocus">
         <name>Charge Focus</name>
         <desc>
-					Charge Foci are used to increase the rate at which Ars Magica machines charge.  In #9Calefactors#0 and #9Arcane Reconstructors#0, they also increase the rate at which the machine performs its task.
-				</desc>
+          Charge Foci are used to increase the rate at which Ars Magica machines charge.  In #9Calefactors#0 and #9Arcane Reconstructors#0, they also increase the rate at which the machine performs its task.
+        </desc>
         <relatedEntries>summoner,arcanereconstructor,arcane_deconstructor</relatedEntries>
       </subitem>
       <subitem id="manafocus">
         <name>Mana Focus</name>
         <desc>
-					Mana Foci are used to decrease costs of operation in Ars Magica machines.
-				</desc>
+          Mana Foci are used to decrease costs of operation in Ars Magica machines.
+        </desc>
         <relatedEntries>summoner,calefactor</relatedEntries>
       </subitem>
       <subitem id="lesserfocus">
         <name>Lesser Focus</name>
         <desc>
-					Lesser Foci are used in various AM2 machines, and instruct them to operate in different ways.
-				</desc>
+          Lesser Foci are used in various AM2 machines, and instruct them to operate in different ways.
+        </desc>
         <relatedEntries>blockseerstone</relatedEntries>
       </subitem>
       <subitem id="standardfocus">
         <name>Standard Focus</name>
         <desc>
-					Standard Foci are used in various AM2 machines, and instruct them to operate in different ways.
-				</desc>
+          Standard Foci are used in various AM2 machines, and instruct them to operate in different ways.
+        </desc>
         <relatedEntries>blockseerstone</relatedEntries>
       </subitem>
       <subitem id="greaterfocus">
         <name>Greater Focus</name>
         <desc>
-					Greater Foci are used in various AM2 machines, and instruct them to operate in different ways.
-				</desc>
+          Greater Foci are used in various AM2 machines, and instruct them to operate in different ways.
+        </desc>
         <relatedEntries>blockseerstone</relatedEntries>
       </subitem>
       <subitem id="item_focus">
         <name>Item Focus</name>
         <desc>
-					Item foci are used in the #9Seer Stone#0, and instruct it to search for nearby items on the ground.
-				</desc>
+          Item foci are used in the #9Seer Stone#0, and instruct it to search for nearby items on the ground.
+        </desc>
         <relatedEntries>blockseerstone</relatedEntries>
       </subitem>
       <subitem id="player_focus">
         <name>Player Focus</name>
         <desc>
-					Player foci are used in the #9Seer Stone#0, and instruct it to search for nearby players.
-				</desc>
+          Player foci are used in the #9Seer Stone#0, and instruct it to search for nearby players.
+        </desc>
         <relatedEntries>blockseerstone</relatedEntries>
       </subitem>
       <subitem id="monster_focus">
         <name>Monster Focus</name>
         <desc>
-					Monster foci are used in the #9Seer Stone#0, and instruct it to search for nearby mobs (Zombies, Skeletons, etc).
-				</desc>
+          Monster foci are used in the #9Seer Stone#0, and instruct it to search for nearby mobs (Zombies, Skeletons, etc).
+        </desc>
         <relatedEntries>blockseerstone</relatedEntries>
       </subitem>
       <subitem id="creature_focus">
         <name>Creature Focus</name>
         <desc>
-					Creature foci are used in the #9Seer Stone#0, and instruct it to search for nearby critters (Sheep, Cows, etc).
-				</desc>
+          Creature foci are used in the #9Seer Stone#0, and instruct it to search for nearby critters (Sheep, Cows, etc).
+        </desc>
         <relatedEntries>blockseerstone</relatedEntries>
       </subitem>
       <relatedEntries>flicker_lure</relatedEntries>
@@ -1044,7 +1044,7 @@
         <desc>By taking a #5bucket of Liquid Etherium#0, a mage can combine it with #5chimerite#0 and #5tarma root#0 in order to create a potion to give a temporary boost to maximum mana.  Unfortunately, the process is minimally efficient and much of the Liquid Etherium is lost along the way.</desc>
         <relatedEntries></relatedEntries>
       </subitem>
-	  <subitem id="mana_martini">
+      <subitem id="mana_martini">
         <name>Mana Martini</name>
         <desc>In honour of Mithion's final release of AM2, which happens to be #9version 007#0, you can now make a Mana Martini that, when drank, will give you a 25% reduction in burnout gained from casting spells.</desc>
         <relatedEntries></relatedEntries>
@@ -1054,20 +1054,20 @@
     <item id="crystal_wrench">
       <name>Crystal Wrench</name>
       <desc>
-	  The crystal wrench serves many purposes.  It can be used to direct Etherium through your power network.  
-	  To do this, #9right click first on the source of Etherium you want to use#0.  This marks the source block. Then, #9right click on the destination while still holding the wrench#0.  
-	  #5Note that there is no need to click on Etherium Conduits along the way - just click on the final block.  The power system will attempt to pathfind through nearby Etherium Conduits automatically#0.  
-	  If that fails for any reason, you will be notified.  This will force a pairing, and ensures the Etherium goes where you want it to.  
-	  !d 
-	  If you #9sneak while right clicking on the source#0, the wrench's crystal will turn green.  This means the crystal wrench is remembering the source block's location, and you can click on several destinations 
-	  in a row without having to return to the source.  Each destination right clicked on in this state will be paired (if possible) to the remembered source.  
-	  !d
-	  You can also disconnect power nodes by #9Sneaking and right clicking#0 on a #5non-powered block#0.  This will switch the wrench's mode from link to unlink.  You can see the change when the crystal on the wrench 
-	  turns red.  To switch it back, simply repeat the sneak right click to change the crystal back to purple.  If you have a stored location, it will need to be cleared first before the mode can be switched (which is 
-	  also done by sneak right-clicking a non-powered block).
-	  !p 
-	  The crystal wrench can also be used to show hidden particle emitters, and can copy their settings by right clicking when in unlink mode.  The settings can then be pasted to another emitter by right clicking.  
-	  Each time you "paste" settings, you will need to copy them again if you wish to paste to additional emitters.</desc>
+        The crystal wrench serves many purposes.  It can be used to direct Etherium through your power network.
+        To do this, #9right click first on the source of Etherium you want to use#0.  This marks the source block. Then, #9right click on the destination while still holding the wrench#0.
+        #5Note that there is no need to click on Etherium Conduits along the way - just click on the final block.  The power system will attempt to pathfind through nearby Etherium Conduits automatically#0.
+        If that fails for any reason, you will be notified.  This will force a pairing, and ensures the Etherium goes where you want it to.
+        !d
+        If you #9sneak while right clicking on the source#0, the wrench's crystal will turn green.  This means the crystal wrench is remembering the source block's location, and you can click on several destinations
+        in a row without having to return to the source.  Each destination right clicked on in this state will be paired (if possible) to the remembered source.
+        !d
+        You can also disconnect power nodes by #9Sneaking and right clicking#0 on a #5non-powered block#0.  This will switch the wrench's mode from link to unlink.  You can see the change when the crystal on the wrench
+        turns red.  To switch it back, simply repeat the sneak right click to change the crystal back to purple.  If you have a stored location, it will need to be cleared first before the mode can be switched (which is
+        also done by sneak right-clicking a non-powered block).
+        !p
+        The crystal wrench can also be used to show hidden particle emitters, and can copy their settings by right clicking when in unlink mode.  The settings can then be pasted to another emitter by right clicking.
+        Each time you "paste" settings, you will need to copy them again if you wish to paste to additional emitters.</desc>
       <relatedEntries>obelisk,mana_battery</relatedEntries>
     </item>
     <item id="spell_parchment">
@@ -1082,9 +1082,9 @@
     </item>
     <item id="spell_staff_magitech">
       <name>Magitech's Staff</name>
-      <desc>The magitech's staff is a modified version of a spell staff that is attuned to ambient mana.  It can be used to sense the Etherium levels in powered blocks by right clicking the block with the staff in your hand.  It gains additional functionality if you have the #9Magitech's Goggles#0 equipped.  
-			!d
-			The Magitech's Staff can also be used to reclaim a #9Magic Broom#0.  Simply right click the broom with the staff in your hand to reclaim it.</desc>
+      <desc>The magitech's staff is a modified version of a spell staff that is attuned to ambient mana.  It can be used to sense the Etherium levels in powered blocks by right clicking the block with the staff in your hand.  It gains additional functionality if you have the #9Magitech's Goggles#0 equipped.
+        !d
+        The Magitech's Staff can also be used to reclaim a #9Magic Broom#0.  Simply right click the broom with the staff in your hand to reclaim it.</desc>
       <relatedEntries>magitechGoggles,magic_broom</relatedEntries>
     </item>
     <item id="spell_book">
@@ -1095,8 +1095,8 @@
     <item id="magic_broom">
       <name>Magic Broom</name>
       <desc>You have taken the magical properties of Arcane Ash and combined them with a broom.  Why?  You're not entirely sure.  What you do know is that this broom loves to keep the area clean, picking up any loose items near it and putting them in it's assigned chest.  To place the broom once you craft it, right click on a #5any block with an inventory#0 with the broom equipped.  It won't work otherwise. Currently the broom will grab all loose items, though it will be configurable at a later time.
-			!d
-			The broom can be reclaimed by right clicking it with a #9Magitech's Staff#0 in your hand.</desc>
+        !d
+        The broom can be reclaimed by right clicking it with a #9Magitech's Staff#0 in your hand.</desc>
       <relatedEntries>spell_staff_magitech</relatedEntries>
     </item>
     <item id="nature_scythe">
@@ -1177,8 +1177,8 @@
     <item id="warding_candle">
       <name>Warding Candle</name>
       <desc>Warding Candles, when held, are moving sources of light.  They can also be #9attuned#0 to a specific block by #9sneaking and right clicking on the block while holding the candle#0.  This will cause the candle flame to turn blue when within 15 blocks of the specified block, and red when within 5 blocks.  A warding candle will burn for 15 minutes, but is put out when not equipped.
-			!d
-			Warding candles are also used in #5Rituals#0, and are placed down as part of the layout.  A Warding Candle that has been attuned cannot be used in a ritual.</desc>
+        !d
+        Warding candles are also used in #5Rituals#0, and are placed down as part of the layout.  A Warding Candle that has been attuned cannot be used in a ritual.</desc>
       <relatedEntries>rituals_overview</relatedEntries>
     </item>
     <item id="flicker_jar">
@@ -1270,7 +1270,7 @@
         <desc>The life, nature and water flickers contained within this focus will work together to help all plants within a 6 block radius grow faster. These hard working flickers will help all nearby plants with or without Etherium but providing them with a source of power will allow them to do their work faster.  When powered, modifying this habitat with a #9Water Flicker Jar#0 will also cause the #9Gentle Rains#0 effect to apply.</desc>
         <relatedEntries>flickerFocus</relatedEntries>
       </subitem>
-	  <subitem id="flickerFocus@768">
+      <subitem id="flickerFocus@768">
         <name>Flicker Focus: Fishing</name>
         <desc>The combination of Water and Nature flickers causes them to be able to find creatures that live in water.  It does require power to maintain the search, however, as the flickers cover a great distance in a short time.  If augmented with adjacent habitats containing lightning flickers, they are able to move even faster, causing them to naturally find fish more often.  Doing so will increase the overall power use. !d The focus requires a 3x3 square of water below it that is also at least 2 blocks deep in order to function.  It will output fish into an adjacent inventory if possible, or drop them as an item if no inventory is present. !d A redstone signal must be provided for the flickers to start working.</desc>
         <relatedEntries>flickerFocus</relatedEntries>
@@ -1286,63 +1286,63 @@
       <desc>Journals can be used to #9record your experiences#0 for later use.  These experiences can #9later be recovered by reading the journal#0.</desc>
       <relatedEntries />
     </item>
-	<item id="deficit_crystal">
+    <item id="deficit_crystal">
       <name>Deficit Crystal</name>
       <desc>Often noted as the antimatter of magic, Deficit represents a void in the fabric of reality.  You've managed to create a refined, crystallized version of it.  Crystals like these are often used in the unmaking of things.</desc>
       <relatedEntries>essence_refiner,arcane_deconstructor</relatedEntries>
     </item>
     <item id="inscriptionUpgrades">
-		<name>Inscription Table Upgrades</name>
-		<desc>These upgrades improve the functionality of your #9Inscription Table#0, allowing you to make use of more shape groups.</desc>
-		<subitem id="inscription_upgrade@0">
-			<name>Tier 1 Upgrade</name>
-			<desc></desc>
-			<relatedEntries>inscriptionTable</relatedEntries>
-		</subitem>
-		<subitem id="inscription_upgrade@1">
-			<name>Tier 2 Upgrade</name>
-			<desc></desc>
-			<relatedEntries>inscriptionTable</relatedEntries>
-		</subitem>
-		<subitem id="inscription_upgrade@2">
-			<name>Tier 3 Upgrade</name>
-			<desc></desc>
-			<relatedEntries>inscriptionTable</relatedEntries>
-		</subitem>
-		<relatedEntries>inscriptionTable</relatedEntries>
-	</item>
+      <name>Inscription Table Upgrades</name>
+      <desc>These upgrades improve the functionality of your #9Inscription Table#0, allowing you to make use of more shape groups.</desc>
+      <subitem id="inscription_upgrade@0">
+        <name>Tier 1 Upgrade</name>
+        <desc></desc>
+        <relatedEntries>inscriptionTable</relatedEntries>
+      </subitem>
+      <subitem id="inscription_upgrade@1">
+        <name>Tier 2 Upgrade</name>
+        <desc></desc>
+        <relatedEntries>inscriptionTable</relatedEntries>
+      </subitem>
+      <subitem id="inscription_upgrade@2">
+        <name>Tier 3 Upgrade</name>
+        <desc></desc>
+        <relatedEntries>inscriptionTable</relatedEntries>
+      </subitem>
+      <relatedEntries>inscriptionTable</relatedEntries>
+    </item>
   </items>
   <structures>
     <structure id="obelisk_structure">
       <name>Obelisk</name>
       <controller>TileEntityObelisk</controller>
       <desc>The Obelisk is somewhat of a magical furnace.  It can generate Etherium by burning #5Vinteum Dust#0 or #5Liquid Etherium#0 out of a bucket.  The Obelisk generates #5Neutral Etherium#0.
-			!d
-			The structure depicted here does not have to be built all at once; it can be built in sections.  The #9Wizard's Chalk Circle#0 is a standalone upgrade that when completed, will increase the output of the Obelisk's burn capabilities.  The #9Pillars#0 are another upgrade, and will further increase the output of the Obelisk.  
-			!d
-			If space is a concern however, these upgrades are not required for the Obelisk to function.</desc>
+        !d
+        The structure depicted here does not have to be built all at once; it can be built in sections.  The #9Wizard's Chalk Circle#0 is a standalone upgrade that when completed, will increase the output of the Obelisk's burn capabilities.  The #9Pillars#0 are another upgrade, and will further increase the output of the Obelisk.
+        !d
+        If space is a concern however, these upgrades are not required for the Obelisk to function.</desc>
       <relatedEntries>obelisk,crystal_wrench,spell_staff_magitech,magitechGoggles,rituals_overview</relatedEntries>
     </structure>
     <structure id="blackaurem_structure">
       <name>Black Aurem</name>
       <controller>TileEntityBlackAurem</controller>
       <desc>A sinister construction, the Black Aurem slowly but invariably pulls living creatures from around it inward to its center.  Upon reaching the middle, bolts of pure darkness lash out and tear the life force out of the creature. The Black Aurem generates #4Dark Etherium#0.  Mobs killed by the Aurem drop neither XP nor loot.
-			!d
-			The Black Aurem is created by performing the #9Ritual of Corruption#0 on an #9Obelisk#0.  Like the Obelisk, the Black Aurem can be upgraded by adding certain multiblock configurations around it.  The first of these is the #5Wizard's Chalk Circle#0, and will increase the amount of power generated from each mob the Aurem consumes.  The second upgrade is the #5Pillars#0, which will further increase the power generation.  The pillars can also have specific #5cap upgrades#0, which modify the amount of benefit.
-			!d
-			Obsidian and Chimerite are on the same level, with Sunstone giving a large bonus to generation.
-			!d
-			Neither the chalk circle or the pillars are required for the Aurem to function.</desc>
+        !d
+        The Black Aurem is created by performing the #9Ritual of Corruption#0 on an #9Obelisk#0.  Like the Obelisk, the Black Aurem can be upgraded by adding certain multiblock configurations around it.  The first of these is the #5Wizard's Chalk Circle#0, and will increase the amount of power generated from each mob the Aurem consumes.  The second upgrade is the #5Pillars#0, which will further increase the power generation.  The pillars can also have specific #5cap upgrades#0, which modify the amount of benefit.
+        !d
+        Obsidian and Chimerite are on the same level, with Sunstone giving a large bonus to generation.
+        !d
+        Neither the chalk circle or the pillars are required for the Aurem to function.</desc>
       <relatedEntries>obelisk,corruption,crystal_wrench,spell_staff_magitech</relatedEntries>
     </structure>
     <structure id="celestialprism_structure">
       <name>Celestial Prism</name>
       <controller>TileEntityCelestialPrism</controller>
       <desc>The Celestial Prism is a purified form of the Obelisk that generates #9Light Etherium#0.  It generates this power slowly, but passively.  It requires nothing more than daylight to generate its power.  You will know it is generating when runes of power begin to swirl around the crystal.
-			!d
-			To create the Celestial Prism, perform the #9Ritual of Purification#0 on an #9Obelisk#0.  Like the Obelisk, the Celestial Prism can be upgraded by adding certain multiblock configurations around it.  The first of these is the #5Wizard's Chalk Circle#0, and will increase the amount of power generated by the prism.  The second upgrade is the #5Pillars#0, which will further increase the rate at which power is generated.  The pillars can also have specific #5cap upgrades#0, which modify the amount of benefit.  
-			!d
-			The most noticable effect are the #9Moonstone Caps#0, which increase the power by a significant amount, but also switches the prism to charge at night instead of during the day.</desc>
+        !d
+        To create the Celestial Prism, perform the #9Ritual of Purification#0 on an #9Obelisk#0.  Like the Obelisk, the Celestial Prism can be upgraded by adding certain multiblock configurations around it.  The first of these is the #5Wizard's Chalk Circle#0, and will increase the amount of power generated by the prism.  The second upgrade is the #5Pillars#0, which will further increase the rate at which power is generated.  The pillars can also have specific #5cap upgrades#0, which modify the amount of benefit.
+        !d
+        The most noticable effect are the #9Moonstone Caps#0, which increase the power by a significant amount, but also switches the prism to charge at night instead of during the day.</desc>
       <relatedEntries>obelisk,rituals_overview,crystal_wrench,spell_staff_magitech</relatedEntries>
     </structure>
     <structure id="gateways">
@@ -1355,48 +1355,48 @@
       <name>Crafting Altar</name>
       <controller>TileEntityCraftingAltar</controller>
       <desc>
-			Harnessing the forces of creation, the crafting altar allows mages to work miracles of magic.  This is where you will create all of your spells in Ars Magica.  The structure is upgradeable by 2 main groups, the caps and the main material.  Both groups individually increase the available power of the altar and allow it to make more powerful spells.  The main blocks, in order of power, are as follows:
-			!l
-			Wood Planks (+1 Effect)
-			!l
-			Stone Brick (+1 Effect)
-			!l
-			Sandstone (+1 Effect)
-			!l
-			Bricks (+2 Effects)
-			!l
-			Witchwood (+2 Effects)
-			!l
-			Nether Bricks (+3 Effects)
-			!l
-			Nether Quartz (+3 Effects)
-			!l
-			!l
-			For the caps (grand total of 5 in the structure), the progression is as follows:
-			!l
-			Glass (+1 Effect)
-			!l
-			Coal Blocks (+2 Effects)
-			!l
-			Redstone Blocks (+3 Effects)
-			!l
-			Iron Blocks (+4 Effects)
-			!l
-			Lapis Blocks (+5 Effects)
-			!l
-			Gold Blocks (+6 Effects)
-			!l
-			Diamond Blocks (+7 Effects)
-			!l
-			Emerald Blocks (+8 Effects)
-			!l
-			Moonstone Blocks (+9 Effects)
-			!l
-			Sunstone Blocks (+10 Effects)
-			!l
-			!l
-			These stack cumulatively, so for example wood planks with glass caps would equal a maximum of 2 effects, whereas stone bricks with redstone caps would have a maximum of 4 effects in a spell.  The maximum number of effects you can currently have on a spell is 13.
-			</desc>
+        Harnessing the forces of creation, the crafting altar allows mages to work miracles of magic.  This is where you will create all of your spells in Ars Magica.  The structure is upgradeable by 2 main groups, the caps and the main material.  Both groups individually increase the available power of the altar and allow it to make more powerful spells.  The main blocks, in order of power, are as follows:
+        !l
+        Wood Planks (+1 Effect)
+        !l
+        Stone Brick (+1 Effect)
+        !l
+        Sandstone (+1 Effect)
+        !l
+        Bricks (+2 Effects)
+        !l
+        Witchwood (+2 Effects)
+        !l
+        Nether Bricks (+3 Effects)
+        !l
+        Nether Quartz (+3 Effects)
+        !l
+        !l
+        For the caps (grand total of 5 in the structure), the progression is as follows:
+        !l
+        Glass (+1 Effect)
+        !l
+        Coal Blocks (+2 Effects)
+        !l
+        Redstone Blocks (+3 Effects)
+        !l
+        Iron Blocks (+4 Effects)
+        !l
+        Lapis Blocks (+5 Effects)
+        !l
+        Gold Blocks (+6 Effects)
+        !l
+        Diamond Blocks (+7 Effects)
+        !l
+        Emerald Blocks (+8 Effects)
+        !l
+        Moonstone Blocks (+9 Effects)
+        !l
+        Sunstone Blocks (+10 Effects)
+        !l
+        !l
+        These stack cumulatively, so for example wood planks with glass caps would equal a maximum of 2 effects, whereas stone bricks with redstone caps would have a maximum of 4 effects in a spell.  The maximum number of effects you can currently have on a spell is 13.
+      </desc>
       <relatedEntries></relatedEntries>
     </structure>
     <structure id="inlays_structure">
@@ -1576,7 +1576,7 @@
         <ritualName>hourglass</ritualName>
         <ritualController>Shrink</ritualController>
       </subitem>
-	  <subitem id="call_rain">
+      <subitem id="call_rain">
         <name>Hourglass Ritual (Call Rain)</name>
         <desc>The hourglass ritual can be used to modify the banish rain spell to instead call rain forth.</desc>
         <relatedEntries>wizardChalk</relatedEntries>
@@ -1597,7 +1597,7 @@
         <ritualName>ringedCross</ritualName>
         <ritualController>Recall</ritualController>
       </subitem>
-	  <subitem id="otherworldly_ritual">
+      <subitem id="otherworldly_ritual">
         <name>Otherworldly Ritual</name>
         <desc>The ringed cross ritual can be used to re-activate an #5Inert Spawner#0 in an interesting way.  It causes the spawner to turn into an #5Otherworldly Aura#0!</desc>
         <relatedEntries>wizardChalk,warding_candle</relatedEntries>
@@ -1616,96 +1616,96 @@
     <mob id="MobManaElemental">
       <name>Mana Elemental</name>
       <desc>
-				The mana elemental is a combination of vinteum shards
-				held together by bolts of Etherium. They are towering
-				creatures, often reaching 3m in height. They attack with
-				bolts of raw mana that lash out, dealing minor damage
-				but stealing mana, and return to the elemental, healing
-				it based on the amount of mana stolen. They are highly
-				resistant to physical damage. If all the mana is drained
-				from the elemental, it will die.
-			</desc>
+        The mana elemental is a combination of vinteum shards
+        held together by bolts of Etherium. They are towering
+        creatures, often reaching 3m in height. They attack with
+        bolts of raw mana that lash out, dealing minor damage
+        but stealing mana, and return to the elemental, healing
+        it based on the amount of mana stolen. They are highly
+        resistant to physical damage. If all the mana is drained
+        from the elemental, it will die.
+      </desc>
       <relatedEntries></relatedEntries>
     </mob>
     <mob id="MobManaCreeper">
       <name>Mana Creeper</name>
       <desc>
-				The mana creeper is a variant on the normal creeper, but
-				instead of a violent explosion, the mana creeper
-				disintegrates into a mana vortex, which will drain the
-				mana of everything nearby. The vortex grows the longer
-				it lives, but luckily all of them don't last for more
-				than a few seconds. The vortex drains more mana the more
-				you have, so it is still a threat to even the most
-				powerful of magi.
-			</desc>
+        The mana creeper is a variant on the normal creeper, but
+        instead of a violent explosion, the mana creeper
+        disintegrates into a mana vortex, which will drain the
+        mana of everything nearby. The vortex grows the longer
+        it lives, but luckily all of them don't last for more
+        than a few seconds. The vortex drains more mana the more
+        you have, so it is still a threat to even the most
+        powerful of magi.
+      </desc>
       <relatedEntries></relatedEntries>
     </mob>
     <mob id="MobLightMage">
       <name>Light Mage</name>
       <desc>
-				Light magi are part of the white council. They are
-				powerful mages who have dedicated themselves to the
-				forces of light. They will heal friendly players and
-				assist them in combat against the various enemies that
-				plague the world of Minecraft. They have a special
-				distaste for Dark Mages.
-			</desc>
+        Light magi are part of the white council. They are
+        powerful mages who have dedicated themselves to the
+        forces of light. They will heal friendly players and
+        assist them in combat against the various enemies that
+        plague the world of Minecraft. They have a special
+        distaste for Dark Mages.
+      </desc>
       <relatedEntries></relatedEntries>
     </mob>
     <mob id="MobDarkMage">
       <name>Dark Mage</name>
       <desc>
-				Dark magi are part of the Black Court. They are sinister
-				casters who are capable of terrifying feats of magic.
-				These feats come at a price though, dark magi are
-				reviled and twisted beings. They will fight anything
-				living except the undead (which tehnically aren't
-				"living" anyways) and creepers. They will go out of
-				their way to fight a Light Mage.
-			</desc>
+        Dark magi are part of the Black Court. They are sinister
+        casters who are capable of terrifying feats of magic.
+        These feats come at a price though, dark magi are
+        reviled and twisted beings. They will fight anything
+        living except the undead (which tehnically aren't
+        "living" anyways) and creepers. They will go out of
+        their way to fight a Light Mage.
+      </desc>
       <relatedEntries></relatedEntries>
     </mob>
     <mob id="MobFireElemental">
       <name>Fire Elemental</name>
       <desc>
-				Fire elementals are beings of pure fire. They are
-				destructive and ignite anything in their path. Fire
-				Elementals are only found in the nether.
-			</desc>
+        Fire elementals are beings of pure fire. They are
+        destructive and ignite anything in their path. Fire
+        Elementals are only found in the nether.
+      </desc>
       <relatedEntries></relatedEntries>
     </mob>
     <mob id="MobWaterElemental">
       <name>Water Elemental</name>
       <desc>
-				Water elementals are beings of pure water. They are
-				found anywhere water is in abundance. They attack in
-				groups, using water to push and pull their target. They
-				can affect their targets with Watery Grave, which will
-				pull unsuspecting down to the crushing black depths.
-			</desc>
+        Water elementals are beings of pure water. They are
+        found anywhere water is in abundance. They attack in
+        groups, using water to push and pull their target. They
+        can affect their targets with Watery Grave, which will
+        pull unsuspecting down to the crushing black depths.
+      </desc>
       <relatedEntries></relatedEntries>
     </mob>
     <mob id="EarthElemental">
       <name>Earth Elemental</name>
       <desc>
-				Earth elementals are found slumbering deep within caves.
-				They are passive by nature, and boast an extreme
-				resistance to physical damage. Combined with a high
-				health pool, anyone learning to summon one could conjure
-				up a veritable tank. Their attacks force the target to
-				focus on them and they will try to bounce from target to
-				target.
-			</desc>
+        Earth elementals are found slumbering deep within caves.
+        They are passive by nature, and boast an extreme
+        resistance to physical damage. Combined with a high
+        health pool, anyone learning to summon one could conjure
+        up a veritable tank. Their attacks force the target to
+        focus on them and they will try to bounce from target to
+        target.
+      </desc>
       <relatedEntries></relatedEntries>
     </mob>
     <mob id="MobDryad">
       <name>Dryad</name>
       <desc>
-				Dryads are peaceful creatures often found in forests and
-				grasslands. They can be lured with a sapling and will
-				periodically make nearby plants grow faster.
-			</desc>
+        Dryads are peaceful creatures often found in forests and
+        grasslands. They can be lured with a sapling and will
+        periodically make nearby plants grow faster.
+      </desc>
       <relatedEntries></relatedEntries>
     </mob>
     <mob id="MobDarkling">
@@ -1720,13 +1720,13 @@
     </mob>
     <mob id="Flicker">
       <name>Flickers</name>
-      <desc>Flickers are lesser elementals from the various elemental planes that have crossed over into our world.  Their magical bond is tenuous at best and they are known for "Flicking" back and forth between their plane and ours.  They are the starting point for #5Ars Magica Automation#0. 
-	  !d
-			Flickers are timid by nature and will flick back to their own dimension if attacked, or if they feel threatened.  Giving them a modicum of magic in the form of #5some sort of lasting effect#0 makes them feel more comfortable and less likely to run away.  #5Flickers can be captured inside of a Flicker Jar#0.
-			!d
-			There is one type of flicker for each affinity.  Flickers of each affinity will behave differently.  For example, Air Flickers tend to like to stay higher above the ground, while Earth Flickers will prefer to stay low.
-			!d
-			Flickers of each affinity can be found near regions of the world that remind them of their affinity.			</desc>
+      <desc>Flickers are lesser elementals from the various elemental planes that have crossed over into our world.  Their magical bond is tenuous at best and they are known for "Flicking" back and forth between their plane and ours.  They are the starting point for #5Ars Magica Automation#0.
+        !d
+        Flickers are timid by nature and will flick back to their own dimension if attacked, or if they feel threatened.  Giving them a modicum of magic in the form of #5some sort of lasting effect#0 makes them feel more comfortable and less likely to run away.  #5Flickers can be captured inside of a Flicker Jar#0.
+        !d
+        There is one type of flicker for each affinity.  Flickers of each affinity will behave differently.  For example, Air Flickers tend to like to stay higher above the ground, while Earth Flickers will prefer to stay low.
+        !d
+        Flickers of each affinity can be found near regions of the world that remind them of their affinity.			</desc>
       <subitem id="waterflicker">
         <name>Water Flicker</name>
         <desc>#5Water Flickers#0 will be found in areas that are predominantly water, like swmaps, rivers, and oceans.</desc>
@@ -1783,99 +1783,99 @@
     <boss id="BossEarthGuardian">
       <name>Earth Guardian</name>
       <desc>
-				Formed out of a core of stone, the Earth Guardian is a
-				hardy opponent that can withstand incredible amounts of
-				physical attacks. With whirling attacks and strength of
-				the earth itself, be prepared for a fight. !l
-				Recommended level: 25 !p To summon the Earth Guardian,
-				first build a 3x3 obsidian platform with a chiseled
-				stone brick at the centre. On top of the obsidian, build
-				an iron inlay ring. Off of each side, on the same level
-				as the inlays, place a vinteum torch. Then throw in a
-				blue topaz, an emerald, and a chimerite. !d Upon
-				summoning, the Earth Guardian will cleave out a large
-				area of the surrounding blocks, so it would be wise to
-				summon somewhere other than your basement.
-			</desc>
+        Formed out of a core of stone, the Earth Guardian is a
+        hardy opponent that can withstand incredible amounts of
+        physical attacks. With whirling attacks and strength of
+        the earth itself, be prepared for a fight. !l
+        Recommended level: 25 !p To summon the Earth Guardian,
+        first build a 3x3 obsidian platform with a chiseled
+        stone brick at the centre. On top of the obsidian, build
+        an iron inlay ring. Off of each side, on the same level
+        as the inlays, place a vinteum torch. Then throw in a
+        blue topaz, an emerald, and a chimerite. !d Upon
+        summoning, the Earth Guardian will cleave out a large
+        area of the surrounding blocks, so it would be wise to
+        summon somewhere other than your basement.
+      </desc>
       <relatedEntries></relatedEntries>
     </boss>
     <boss id="BossWaterGuardian">
       <name>Water Guardian</name>
       <desc>
-				The guardian of water is a unique being. It is always in
-				a state of fluidity, making it able to shrug off attacks
-				occasionally. It is a trickster as well, flowing into
-				copies of itself and attacking from ambush if one is
-				fooled by the decoy. !l Recommended level: 10 !p The
-				water guardian can be summoned by creating a redstone
-				inlay circle in any biome that is predominantly water.
-				Then, while raining, throw a boat and a bucket of water
-				into the circle as homage to the many ships lost at sea.
-			</desc>
+        The guardian of water is a unique being. It is always in
+        a state of fluidity, making it able to shrug off attacks
+        occasionally. It is a trickster as well, flowing into
+        copies of itself and attacking from ambush if one is
+        fooled by the decoy. !l Recommended level: 10 !p The
+        water guardian can be summoned by creating a redstone
+        inlay circle in any biome that is predominantly water.
+        Then, while raining, throw a boat and a bucket of water
+        into the circle as homage to the many ships lost at sea.
+      </desc>
       <relatedEntries></relatedEntries>
     </boss>
     <boss id="BossWinterGuardian">
       <name>Winter Guardian</name>
       <desc>
-				The Winter Guardian is truly the embodiment of it's
-				namesake. Surrounded by frigid winds that sap the
-				strength of all who near it, the Winter Guardian pummels
-				its frozen foes and shatters them with powerful strikes.
-				!p To summon the Winter Guardian, seek out an area in
-				the grips of winter. Place a gold inlay circle on the
-				ground and build an effigy to the Winter Guardian in the
-				centre, Ice on top of two Blue Topaz blocks. Then create
-				3 snow golems close by to fuel the summoning. !d
-				Warning: !l This is a very difficult boss that can take
-				down even the most well geared players.
-			</desc>
+        The Winter Guardian is truly the embodiment of it's
+        namesake. Surrounded by frigid winds that sap the
+        strength of all who near it, the Winter Guardian pummels
+        its frozen foes and shatters them with powerful strikes.
+        !p To summon the Winter Guardian, seek out an area in
+        the grips of winter. Place a gold inlay circle on the
+        ground and build an effigy to the Winter Guardian in the
+        centre, Ice on top of two Blue Topaz blocks. Then create
+        3 snow golems close by to fuel the summoning. !d
+        Warning: !l This is a very difficult boss that can take
+        down even the most well geared players.
+      </desc>
       <relatedEntries></relatedEntries>
     </boss>
     <boss id="BossArcaneGuardian">
       <name>Arcane Guardian</name>
       <desc>
-				A mage of ancient times, the Arcane Guardian has access
-				to a wide variety of spells. From attacks to buffs to
-				debuffs, prepare for a magical duel that will test your
-				counterspell knowledge. Protected by a powerful sigil,
-				the Arcane Guardian has as many tricks against melee
-				opponents as it does against ranged attackers. !l Recommended level: 45 !p To
-				summon the Arcane Guardian, first construct a Shrine of
-				Knowledge. The shrine is 2 pillars of bookshelves, 3
-				high, with a lectern on the ground in between them
-				containing an Arcane Compendium. Place an iron inlay
-				circle directly in front of the structure, and throw an
-				Arcane Essence directly in the middle of the circle to
-				start the ritual.
-			</desc>
+        A mage of ancient times, the Arcane Guardian has access
+        to a wide variety of spells. From attacks to buffs to
+        debuffs, prepare for a magical duel that will test your
+        counterspell knowledge. Protected by a powerful sigil,
+        the Arcane Guardian has as many tricks against melee
+        opponents as it does against ranged attackers. !l Recommended level: 45 !p To
+        summon the Arcane Guardian, first construct a Shrine of
+        Knowledge. The shrine is 2 pillars of bookshelves, 3
+        high, with a lectern on the ground in between them
+        containing an Arcane Compendium. Place an iron inlay
+        circle directly in front of the structure, and throw an
+        Arcane Essence directly in the middle of the circle to
+        start the ritual.
+      </desc>
       <relatedEntries></relatedEntries>
     </boss>
     <boss id="BossAirGuardian">
       <name>Air Guardian</name>
       <desc>
-				The Air Guardian is a being of wind, and makes heavy use
-				of knockback based attacks. It would be foolish to go
-				into battle with one without some form of falling
-				protection. The Air Guardian is a powerful ranged
-				caster, but it requires a great deal of focus to finish
-				some of it's spells... !l Recommended level: 35 !p To
-				summon the Air Guardian, climb up well above the clouds
-				and build a platform (y 150 or higher). Build a gold
-				inlay ring on the platform and throw in an Air Essence.
-			</desc>
+        The Air Guardian is a being of wind, and makes heavy use
+        of knockback based attacks. It would be foolish to go
+        into battle with one without some form of falling
+        protection. The Air Guardian is a powerful ranged
+        caster, but it requires a great deal of focus to finish
+        some of it's spells... !l Recommended level: 35 !p To
+        summon the Air Guardian, climb up well above the clouds
+        and build a platform (y 150 or higher). Build a gold
+        inlay ring on the platform and throw in an Air Essence.
+      </desc>
       <relatedEntries></relatedEntries>
     </boss>
     <boss id="BossFireGuardian">
       <name>Fire Guardian</name>
       <desc>
-				The Fire Guardian is a living inferno from the depths of
-				the nether. To summon it, create a gold inlay ring in
-				the nether on top of obsidian with a coal block in the middle. Throw a water
-				essence onto the coal and the fire
-				guardian will appear. Be warned though, it does not take kindly to
-				those that try to bring water to its domain. Be prepared
-				for a fight! !l Recommended level: 90
-			</desc>
+        The Fire Guardian is a living inferno from the depths of
+        the nether. To summon it, create a gold inlay ring in
+        the nether on top of obsidian with a coal block in the middle. Throw a water
+        essence onto the coal and the fire
+        guardian will appear. Be warned though, it does not take kindly to
+        those that try to bring water to its domain. Be prepared
+        for a fight! !l Recommended level: 90
+      </desc>
       <relatedEntries></relatedEntries>
     </boss>
     <boss id="BossLifeGuardian">
@@ -1898,18 +1898,18 @@
     <block id="illusionBlocks">
       <name>Illusion Blocks</name>
       <desc>
-			Illusion blocks are so realistic that your brain will not allow you to walk through them due to self preservation and common sense.  Only with true sight can you convince yourself that the illusion is not real, and pass through to the other side.
-			!l
-			"Is that it?"
-			!l
-			"No. That's a wall."
-			!l
-			"It could be disguised."
-			!l
-			"You're not very good at looking for things, are you?"
-			!l
-			"I'm good at looking for walls. Look, I found another one."
-			</desc>
+        Illusion blocks are so realistic that your brain will not allow you to walk through them due to self preservation and common sense.  Only with true sight can you convince yourself that the illusion is not real, and pass through to the other side.
+        !l
+        "Is that it?"
+        !l
+        "No. That's a wall."
+        !l
+        "It could be disguised."
+        !l
+        "You're not very good at looking for things, are you?"
+        !l
+        "I'm good at looking for walls. Look, I found another one."
+      </desc>
       <subitem id="illusionBlock@0">
         <name>Illusion Block</name>
         <desc>Standard illusion blocks will look and function as solid blocks unless the entity attempting to pass through has #9True Sight#0 active.</desc>
@@ -1925,53 +1925,53 @@
     <block id="essence_refiner">
       <name>Essence Refiner</name>
       <desc>
-				The essence refiner takes everyday items and using
-				#5Arcane Ash#0, refines them into a pure representation
-				of their parts, known as #5essences#0. The recipes for
-				specific essences can be found under #9Items -&gt;
-				Essences#0. The essence refiner also requires #2Etherium#0 to function.
-				Neutral Etherium can be obtained from an #9Obelisk#0, which has no specific advantages or
-				drawbacks. Finally, Dark Etherium can be used from a
-				#9Black Aurem#0, which significantly reduces the amount
-				of time it takes to refine the essence. The spinning ring
-				on the UI will shift from blue to purple as the
-				refinement process progresses and eventually completes.
-				A flashing red ring means there is insufficient Etherium to
-				continue, and the process has been paused.
-			</desc>
+        The essence refiner takes everyday items and using
+        #5Arcane Ash#0, refines them into a pure representation
+        of their parts, known as #5essences#0. The recipes for
+        specific essences can be found under #9Items -&gt;
+        Essences#0. The essence refiner also requires #2Etherium#0 to function.
+        Neutral Etherium can be obtained from an #9Obelisk#0, which has no specific advantages or
+        drawbacks. Finally, Dark Etherium can be used from a
+        #9Black Aurem#0, which significantly reduces the amount
+        of time it takes to refine the essence. The spinning ring
+        on the UI will shift from blue to purple as the
+        refinement process progresses and eventually completes.
+        A flashing red ring means there is insufficient Etherium to
+        continue, and the process has been paused.
+      </desc>
       <relatedEntries>essence</relatedEntries>
     </block>
     <block id="essenceconduit">
       <name>Etherium Conduit</name>
       <desc>
-				Infused with dusts to direct Etherium through the 
-				air, the Etherium Conduit began seeing heavy use almost 
-				immediately after its invention.  They can be used to 
-				transfer Etherium over longer distances than the direct 
-				range of Etherium generation apparatus.  Each one has a 
-				range of 10 blocks, and can form chains to move Etherium 
-				up to 100 blocks away from the origin.
-			</desc>
+        Infused with dusts to direct Etherium through the
+        air, the Etherium Conduit began seeing heavy use almost
+        immediately after its invention.  They can be used to
+        transfer Etherium over longer distances than the direct
+        range of Etherium generation apparatus.  Each one has a
+        range of 10 blocks, and can form chains to move Etherium
+        up to 100 blocks away from the origin.
+      </desc>
       <relatedEntries></relatedEntries>
     </block>
     <block id="casters">
       <name>Caster Blocks</name>
       <desc>
-				A spell is nothing more than directed essence. The will
-				of a magic user dictates what the essence does, and if
-				they have enough capacity for essence, the magic will
-				flow forth. The caster was designed to replicate that
-				ability, converting raw essence into a burst of magic
-				that is directed through a spell focus (as well as the
-				occasional mana focus) and shaped via the instructions
-				on a spell scroll. Because of the extreme essence draw
-				of certain spells, the internal crystals were fitted
-				with a slot to allow a charge focus which causes the
-				amount of incoming essence to be increased
-				substantially. Alternately, a mana focus can be fitted
-				into the same slots, causing the internal essence
-				routing to be much more efficient.
-			</desc>
+        A spell is nothing more than directed essence. The will
+        of a magic user dictates what the essence does, and if
+        they have enough capacity for essence, the magic will
+        flow forth. The caster was designed to replicate that
+        ability, converting raw essence into a burst of magic
+        that is directed through a spell focus (as well as the
+        occasional mana focus) and shaped via the instructions
+        on a spell scroll. Because of the extreme essence draw
+        of certain spells, the internal crystals were fitted
+        with a slot to allow a charge focus which causes the
+        amount of incoming essence to be increased
+        substantially. Alternately, a mana focus can be fitted
+        into the same slots, causing the internal essence
+        routing to be much more efficient.
+      </desc>
       <subitem id="casterRune">
         <name>Caster Rune</name>
         <desc>The Caster Rune functions in the same way as a #5Caster#0, save for one specific difference:  The caster rune does not required a redstone signal to operate, and rather casts when walked upon.  It will cast directly on whatever triggers it.</desc>
@@ -1987,151 +1987,151 @@
     <block id="blockseerstone">
       <name>Seer Stone</name>
       <desc>
-				Operating on a similar principle as the Astral Barrier,
-				the Seer Stone uses an Etherium aura projected through a
-				spell focus to detect nearby objects. It can be
-				controlled by focusing the Etherium to a particular type
-				of object, and the resonant frequency of the Etherium can
-				be dictated with the use of a rune combination. Without the use
-				of a rune combination, the resonant frequency fluxuates
-				unpredictably and cannot be avoided. The seer stone,
-				however, is meant for a more subtle approach, letting
-				the object continue, but emitting a small signal that
-				often activates much more powerful defenses. By sneaking
-				up and activating the stone, one can even (if he has the
-				correct key of course) cause the stone to invert its
-				detection methods, detecting those with the matching
-				keystone combination.
-				!d
-				Different #5Foci#0 can be used in the Seer Stone.  #5Lesser, 
-				Standard, and Greater foci#0 change the detection distance of 
-				the stone (5, 10, or 15 blocks respectively), while #5Item, 
-				Player, Monster, or Creature foci#0 can
-				change what the seer stone is looking for.  Without a target
-				focus and a distance focus, the seer stone will not function.
-				!d
-				A keystone is 
-				searched for in the case of a player.  If the player has a
-				keystone in their inventory matching the rune combination in
-				the seer stone, the seer stone will ignore them and will not
-				trigger.
-			</desc>
+        Operating on a similar principle as the Astral Barrier,
+        the Seer Stone uses an Etherium aura projected through a
+        spell focus to detect nearby objects. It can be
+        controlled by focusing the Etherium to a particular type
+        of object, and the resonant frequency of the Etherium can
+        be dictated with the use of a rune combination. Without the use
+        of a rune combination, the resonant frequency fluxuates
+        unpredictably and cannot be avoided. The seer stone,
+        however, is meant for a more subtle approach, letting
+        the object continue, but emitting a small signal that
+        often activates much more powerful defenses. By sneaking
+        up and activating the stone, one can even (if he has the
+        correct key of course) cause the stone to invert its
+        detection methods, detecting those with the matching
+        keystone combination.
+        !d
+        Different #5Foci#0 can be used in the Seer Stone.  #5Lesser,
+        Standard, and Greater foci#0 change the detection distance of
+        the stone (5, 10, or 15 blocks respectively), while #5Item,
+        Player, Monster, or Creature foci#0 can
+        change what the seer stone is looking for.  Without a target
+        focus and a distance focus, the seer stone will not function.
+        !d
+        A keystone is
+        searched for in the case of a player.  If the player has a
+        keystone in their inventory matching the rune combination in
+        the seer stone, the seer stone will ignore them and will not
+        trigger.
+      </desc>
       <relatedEntries>lesserfocus,standardfocus,greaterfocus,item_focus,player_focus,monster_focus,creature_focus,keystone,foci</relatedEntries>
     </block>
     <block id="blockastralbarrier">
       <name>Astral Barrier</name>
       <desc>
-				When walking the void, one must be aware of barriers.
-				Projecting an Etherium aura through a spell focus, these
-				barriers resonate at a specific magical frequency,
-				dictated by a keytstone. Without the proper matching
-				keystone, these barriers will destabilize your magics
-				and force you out of the void. Should the astral barrier
-				not have a keystone present, its magic frequency will
-				fluxuate unpredictably, and no amount of Keystones can
-				protect you from its effects. Several Dark Magi raids
-				have been foiled and several Light Magi have been
-				captured due to their failure to spot the barrier in
-				time.
-				!d
-				Different #5Foci#0 can be used in the Astral Barrier.  #5Lesser, 
-				Standard, and Greater foci#0 change the distance of 
-				the barrier, to 5, 10, or 15 blocks respectively. Without
-				a distance focus, the barrier will not function.
-				!d
-				The barrier will stop teleportation into its radius, including
-				ender pearls, blink, mark/recall, and endermen.
-			</desc>
+        When walking the void, one must be aware of barriers.
+        Projecting an Etherium aura through a spell focus, these
+        barriers resonate at a specific magical frequency,
+        dictated by a keytstone. Without the proper matching
+        keystone, these barriers will destabilize your magics
+        and force you out of the void. Should the astral barrier
+        not have a keystone present, its magic frequency will
+        fluxuate unpredictably, and no amount of Keystones can
+        protect you from its effects. Several Dark Magi raids
+        have been foiled and several Light Magi have been
+        captured due to their failure to spot the barrier in
+        time.
+        !d
+        Different #5Foci#0 can be used in the Astral Barrier.  #5Lesser,
+        Standard, and Greater foci#0 change the distance of
+        the barrier, to 5, 10, or 15 blocks respectively. Without
+        a distance focus, the barrier will not function.
+        !d
+        The barrier will stop teleportation into its radius, including
+        ender pearls, blink, mark/recall, and endermen.
+      </desc>
       <relatedEntries>lesserfocus,standardfocus,greaterfocus,keystone,foci</relatedEntries>
     </block>
     <block id="blockkeystonerecepticle">
       <name>Keystone Recepticle</name>
       <desc>
-				Not all magi are capable of walking the void as a means
-				of travel, nor are all willing. The void is detectable,
-				blockable. Gateways were developed by the Dark Magi
-				early in the war, and it allowed them to take many Light
-				Mage encampments by surprise, as it uses alternate
-				pathways to transport to its destination. Astral
-				Barriers were ineffective at stopping the arrival of the
-				Dark Magi, and the destination gate required no power of
-				its own. The Light Magi destroyed as many as they could
-				find, but the Dark Magi only needed one. The only hope
-				was when a young Light Mage by the name of Damien
-				Callitri discovered that the gateways could be locked
-				down if a Keystone was inserted into a flaw in the
-				design at just the right spot in the gateway mechanism,
-				and would actually cause the gateway to send the Dark
-				Mages to a different gateway (or nowhere if none others
-				existed that weren't locked down). This halted the raids
-				completely, and allowed the White Magi to turn the tides
-				back in their favour, as they could actually use the
-				gateways to return to their keystone gate. The design
-				flaw became jokingly known as the "Keystone Recepticle"
-				amongst the White Magi.
-			</desc>
+        Not all magi are capable of walking the void as a means
+        of travel, nor are all willing. The void is detectable,
+        blockable. Gateways were developed by the Dark Magi
+        early in the war, and it allowed them to take many Light
+        Mage encampments by surprise, as it uses alternate
+        pathways to transport to its destination. Astral
+        Barriers were ineffective at stopping the arrival of the
+        Dark Magi, and the destination gate required no power of
+        its own. The Light Magi destroyed as many as they could
+        find, but the Dark Magi only needed one. The only hope
+        was when a young Light Mage by the name of Damien
+        Callitri discovered that the gateways could be locked
+        down if a Keystone was inserted into a flaw in the
+        design at just the right spot in the gateway mechanism,
+        and would actually cause the gateway to send the Dark
+        Mages to a different gateway (or nowhere if none others
+        existed that weren't locked down). This halted the raids
+        completely, and allowed the White Magi to turn the tides
+        back in their favour, as they could actually use the
+        gateways to return to their keystone gate. The design
+        flaw became jokingly known as the "Keystone Recepticle"
+        amongst the White Magi.
+      </desc>
       <relatedEntries>keystone,gateways</relatedEntries>
     </block>
     <block id="ores@0">
       <name>Vinteum Ore</name>
       <desc>
-				Vinteum was discovered during a heated battle between
-				the Light and Dark magi when a stray arcane bolt
-				collided with an ender bolt. The resulting explosion
-				created a crater several meters deep, where a sparkling
-				blue ore shimmered in the light of the afternoon. It
-				appears to have no magical properties of its own, but
-				when heat is applied, it becomes a fine dust with an
-				exceptional capacity to conduct Etherium. As such, it is
-				widely used in magical contraptions all over the world.
-			</desc>
+        Vinteum was discovered during a heated battle between
+        the Light and Dark magi when a stray arcane bolt
+        collided with an ender bolt. The resulting explosion
+        created a crater several meters deep, where a sparkling
+        blue ore shimmered in the light of the afternoon. It
+        appears to have no magical properties of its own, but
+        when heat is applied, it becomes a fine dust with an
+        exceptional capacity to conduct Etherium. As such, it is
+        widely used in magical contraptions all over the world.
+      </desc>
       <relatedEntries>itemOre@0,vinteumTorch,warding_candle</relatedEntries>
     </block>
     <block id="mana_battery">
       <name>Mana Battery</name>
       <desc>
-				Drawing further on vinteum dust's ability to conduct
-				Etherium, a small group of brilliant magi created a frame
-				out of iron and gold which is capable of storing massive
-				amounts of Etherium. Mana batteries will
-				always provide power to connected devices, but they can
-				also request Etherium from the network
-				when given a redstone signal.
-			</desc>
+        Drawing further on vinteum dust's ability to conduct
+        Etherium, a small group of brilliant magi created a frame
+        out of iron and gold which is capable of storing massive
+        amounts of Etherium. Mana batteries will
+        always provide power to connected devices, but they can
+        also request Etherium from the network
+        when given a redstone signal.
+      </desc>
       <relatedEntries></relatedEntries>
     </block>
     <block id="cerublossom">
       <name>Cerublossom</name>
       <desc>
-				Cerublossom flowers thrive in lush, green environments. They
-				were one of the first magical plants discovered, being
-				used in potions and salves. Cerublossom emits a
-				faint sparkling glow of light around it as well, and was
-				used just as much for decoration as an alchemical
-				ingredient. A short while after its discovery, it was
-				also noted that the Cerublossom could be used as part of
-				the purification process for Vinteum dust.
-			</desc>
+        Cerublossom flowers thrive in lush, green environments. They
+        were one of the first magical plants discovered, being
+        used in potions and salves. Cerublossom emits a
+        faint sparkling glow of light around it as well, and was
+        used just as much for decoration as an alchemical
+        ingredient. A short while after its discovery, it was
+        also noted that the Cerublossom could be used as part of
+        the purification process for Vinteum dust.
+      </desc>
       <relatedEntries></relatedEntries>
     </block>
     <block id="desert_nova">
       <name>Desert Nova</name>
       <desc>
-				Desert Novas grow in dry conditions. They get their name
-				from the small bursts of magic that they periodically
-				emit. The Nova has extraordinary magical properties for
-				a desert plant, and is highly sought after. It is one of
-				the two plants used in the purification process of
-				Vinteum dust.
-			</desc>
+        Desert Novas grow in dry conditions. They get their name
+        from the small bursts of magic that they periodically
+        emit. The Nova has extraordinary magical properties for
+        a desert plant, and is highly sought after. It is one of
+        the two plants used in the purification process of
+        Vinteum dust.
+      </desc>
       <relatedEntries></relatedEntries>
     </block>
     <block id="keystonechest">
       <name>Keystone Chest</name>
       <desc>The keystone chest was developed as a simple way to have a magically locked chest.  When a keystone is inserted into the internal slot, in order to open it, one must have a matching keystone in their hand.  By inserting the keystone into the outer lock*, the chest can be opened.  If there is no keystone, the chest opens normally.
-			!l
-			!l
-			* Just right click the chest with the keystone in your hand.</desc>
+        !l
+        !l
+        * Just right click the chest with the keystone in your hand.</desc>
       <relatedEntries>keystone</relatedEntries>
     </block>
     <block id="magicWall">
@@ -2222,7 +2222,7 @@
     <block id="altarOfCreation">
       <name>Crafting Altar</name>
       <desc>Harnessing the forces of creation, the crafting altar allows mages to work miracles of magic.  This is where you will create all of your spells in AM2.  The crafting altar is a component of a #9multiblock structure#0.
-			</desc>
+      </desc>
       <relatedEntries>runes,yourFirstSpell,gainingMagicLevels,obelisk,otherworldly_aura</relatedEntries>
     </block>
     <block id="magiciansWorkbench">
@@ -2247,24 +2247,24 @@
     <block id="obelisk">
       <name>Obelisk</name>
       <desc>The Obelisk is a runed block that is used to generate #5Etherium#0 (the power system in Ars Magica 2).  It acts as a magical furnace, and burns Vinteum Dust or Liquid Etherium to generate power.
-			!d
-			It can be altered using #9Rituals#0 to become a #4Black Aurem#0 or a #9Celestial Prism#0.</desc>
+        !d
+        It can be altered using #9Rituals#0 to become a #4Black Aurem#0 or a #9Celestial Prism#0.</desc>
       <relatedEntries>obelisk_structure,blackaurem_structure,celestialprism_structure,essenceAllAround,powerTypes,mana_battery,essence_refiner,essenceconduit,casters,arcanereconstructor,slipstreamGenerator,crystal_wrench</relatedEntries>
     </block>
     <block id="brokenLink">
       <name>Broken Power Links</name>
       <desc>If a power path is created, and at some point a relay (conduits, etc.) or generator (obelisk, prism, aurem, etc.) is broken, the power system will attempt to let you know that there was something there, and something is amiss.  These blocks will be placed automatically by the power system if a broken link is detected.  The block will be placed at the point where the relay or generator used to be.
-			!d
-			These blocks will only ever be placed where no other block exists.  They cannot be broken by hand, but can be replaced with any block.  Broken power link blocks are only visible if you are wearing a pair of #9Magitech's Goggles#0.</desc>
+        !d
+        These blocks will only ever be placed where no other block exists.  They cannot be broken by hand, but can be replaced with any block.  Broken power link blocks are only visible if you are wearing a pair of #9Magitech's Goggles#0.</desc>
       <relatedEntries>magitechGoggles</relatedEntries>
     </block>
     <block id="flickerHabitat">
       <name>Flicker Habitat</name>
       <desc>The flicker habitat is a series of crystals designed to allow Flickers to remain in our world.  If a #9Flicker Focus#0 is added, the flickers inside the focus will use the habitat to perform several tasks around the area, such as growing plants, sorting items, fishing, creating magical barriers, and many other functions.
-			!d
-			You can also place a #9Flicker Jar#0 in the habitat and it will serve to modify the functionality of adjacent habitats with a Flicker Focus in them.
-			!d
-			See the flicker focus entries for more information on how they can be modified.</desc>
+        !d
+        You can also place a #9Flicker Jar#0 in the habitat and it will serve to modify the functionality of adjacent habitats with a Flicker Focus in them.
+        !d
+        See the flicker focus entries for more information on how they can be modified.</desc>
       <relatedEntries>flickerFocus,flicker_jar,crystalMarkers</relatedEntries>
     </block>
     <block id="crystalMarker">
@@ -2305,12 +2305,12 @@
         <desc>This crystal instructs the flickers that they may import items into the item transportation network from the inventory this crystal is attached to so long as the item has been added to this crystal's GUI.</desc>
         <relatedEntries>flickerFocus,spell_staff_magitech,magitechGoggles,crystal_wrench</relatedEntries>
       </subitem>
-	  <subitem id="crystalMarker@7">
+      <subitem id="crystalMarker@7">
         <name>Final Export Crystal</name>
         <desc>This crystal instructs the flickers that they should put any items that can't otherwise be placed in the inventory marked by this crystal.  These crystals always have the highest priority number, meaning items will be placed there last.</desc>
         <relatedEntries>flickerFocus,spell_staff_magitech,magitechGoggles,crystal_wrench</relatedEntries>
       </subitem>
-	  <subitem id="crystalMarker@8">
+      <subitem id="crystalMarker@8">
         <name>Spell Export Crystal</name>
         <desc>This crystal instructs the flickers to watch any crafting altar within 10 blocks. If it is crafting a spell, the flickers will attempt to fetch the next item required for the spell and place it in the inventory marked by this crystal.</desc>
         <relatedEntries>flickerFocus,spell_staff_magitech,magitechGoggles,crystal_wrench</relatedEntries>
@@ -2332,12 +2332,12 @@
     </block>
     <block id="armor_infuser_index">
       <name>Armor Imbuement Table</name>
-      <desc>The Armor Imbuement Table can be used to upgrade the AM armor with special imbuements.  In order to do this, you first need to have the armor equipped.  Mousing over AM armor will display a prompt of "Press SHIFT for more information".  Doing so will show you how much XP has been absorbed into the armor.  Armor gains XP when you do.  See #5Mechanics -&gt; Armor XP Infusion#0 for more information on how it works. !d Once your armor has reached at least level 30, you can apply a Tier I imbuement to it.  Simply equip the armor and activate the Armor Imbuement Table.  Place the armor from the equip slots at the bottom of the UI into the active slot.  Available imbuements will appear in colour, unavailable ones will be grayscale.  You can only apply one tier of imbuement per armor piece, so choose wisely!  !d The tier costs are: !l Tier 1: 30 levels !l Tier 2: 42 levels !l Tier 3: 54 levls !l Tier 4: 66 levels !d Each time you imbue the armor, XP is deducted from it to apply the imbuement.</desc>
-	  <subitem id="armor_infuser">
-		<name>Block Recipe</name>
-		<desc></desc>
-		<relatedEntries></relatedEntries>
-	  </subitem>
+      <desc>The Armor Imbuement Table can be used to attach special imbuements to any armor in Minecraft.  In order to do this, you first need to have the armor equipped.  Mousing over any armor will display a prompt of "Press SHIFT for more information".  Doing so will show you how much XP has been absorbed into the armor.  Armor gains XP when you do.  See #5Mechanics -&gt; Armor XP Infusion#0 for more information on how it works. !d Once your armor has reached at least level 30, you can apply a Tier I imbuement to it.  Simply equip the armor and activate the Armor Imbuement Table.  Place the armor from the equip slots at the bottom of the UI into the active slot.  Available imbuements will appear in colour, unavailable ones will be grayscale.  You can only apply one tier of imbuement per armor piece, so choose wisely!  !d The tier costs are: !l Tier 1: 30 levels !l Tier 2: 42 levels !l Tier 3: 54 levls !l Tier 4: 66 levels !d Each time you imbue the armor, XP is deducted from it to apply the imbuement.</desc>
+      <subitem id="armor_infuser">
+        <name>Block Recipe</name>
+        <desc></desc>
+        <relatedEntries></relatedEntries>
+      </subitem>
       <subitem id="imbuement_burnout_reduction">
         <name>Imbuement:  Burnout Reduction</name>
         <desc>The Burnout Reduction imbuement grants a 150% increase in the rate that your Burnout reduces. The effect is additive for each piece, with a maximum of 600%. !d Available Slots:  Head, Chest, Legs, Boots</desc>
@@ -2469,125 +2469,125 @@
         <desc>The Light Step Imbuement automatically causes a mage light to be placed at your feet (if possible) wherever the light level is low enough for monsters to spawn. !d Available Slots: Boots</desc>
       </subitem>
     </block>
-	<block id="flicker_lure">
+    <block id="flicker_lure">
       <name>Flicker Lure</name>
       <desc>Flickers aren't normally able to enter our world, but with a little help and incentive, you can make that happen.  Placing this block and powering it with Etherium will allow flickers to be pulled into our world!  When you want them, just apply a redstone signal.  The type of flicker will depend on where the lure is.  See the entry on #9Flickers#0 for information on where to find specific ones.</desc>
       <relatedEntries>Flicker</relatedEntries>
     </block>
-	<block id="arcane_deconstructor">
+    <block id="arcane_deconstructor">
       <name>Arcane Deconstructor</name>
       <desc>The Arcane Deconstructor, when powerd with #5Dark Etherium#0 can disassemble an item back into its crafting components. !d  Oh yeah, it can also disassemble spells.  You will get most of the items back from a spell, but items such as the initial blank rune or etherium investments, as well as the final spell parchment, will not be refunded. !d The deconstructor will attempt to place items into adjacent inventories if its own is full upon un-crafting.  Any items that cannot be placed are simply ejected into the world.</desc>
       <relatedEntries>chargefocus</relatedEntries>
     </block>
-	<block id="otherworldly_aura">
+    <block id="otherworldly_aura">
       <name>Otherworldly Aura</name>
       <desc>The Otherworldly Aura is used to automate spell creation.  It summons a shadow copy of whoever created it to complete the spell.  !d To use it, you need the following: !l -Within 10 blocks of the #5Crafting Altar#0 !l -#4Dark#0 or #9Neutral#0 Etherium (have a good amount on hand, interdimensional travel is costly!) !l -One or more block inventories (chest, hopper, etc) within 8 blocks of the Aura.  These inventories are what will be searched for spell reagents. !d The aurem will maintain the shadow for as long as needed, provided it has enough power.  Running out of power will cause the shadow to dissipate, and out of spite for the inconvenience, it may take whatever reagent it is currently carrying!  Only one aura will assist an altar at a time, so multiple auras are not needed. !d To get the aura, perform a #5Ritual of the Cross#0 around an #5Inert Spawner#0 with #5Transplace#0 as the catalyst.</desc>
       <relatedEntries>rituals_overview,Transplace,corruption_obelisk,inertSpawner</relatedEntries>
     </block>
-	<block id="inertSpawner">
-		<name>Inert Spawner</name>
-		<desc>You've managed to pick up a monster spawner, but it seems to not be able to spawn anything anymore.  You should look into other applications for this device, or find a way to re-activate it. !d Perhaps #5Dark Etherium#0 and a #5Filled Crystal Phylactery#0 could make it function again...</desc>
-		<relatedEntries>otherworldly_aura,blackaurem_structure,crystal_phylactery</relatedEntries>
-	</block>
+    <block id="inertSpawner">
+      <name>Inert Spawner</name>
+      <desc>You've managed to pick up a monster spawner, but it seems to not be able to spawn anything anymore.  You should look into other applications for this device, or find a way to re-activate it. !d Perhaps #5Dark Etherium#0 and a #5Filled Crystal Phylactery#0 could make it function again...</desc>
+      <relatedEntries>otherworldly_aura,blackaurem_structure,crystal_phylactery</relatedEntries>
+    </block>
   </blocks>
   <mechanics>
     <mechanic id="affinity">
       <name>Affinities</name>
       <desc>#5Affinity#0 represents a bond to certain areas of magic.  You start with no affinity.  Your affinity is represented as a small chart on the HUD, and can be viewed in more detail at an Occulus (craftable Block).  Your affinity will shift based on what spells you cast, meaning as you cast certain types of spells more often, you will get better at them.
-			Casting spells of a differing affinity will shift you towards that affinity.  Once you reach 100% in an affinity, you become locked to that affinity, and will need to read an opposing affinity tome to unlock your affinity, at which point normal progression will resume.  Unlocking a full affinity will drop you down to 80% depth.
-			
-			Each spell component has an affinity.  Components of the same affinity as you will cost less mana, and depending on your affinity depth (how far into the affinity you are), may not even cost reagents.  Components of the opposing affinity, however, will cost more mana and again, depending on your affinity depth, may cost additional reagents.  Affinities offer specific bonuses and disadvantages, described on the affinity-specific pages.			
-			</desc>
+        Casting spells of a differing affinity will shift you towards that affinity.  Once you reach 100% in an affinity, you become locked to that affinity, and will need to read an opposing affinity tome to unlock your affinity, at which point normal progression will resume.  Unlocking a full affinity will drop you down to 80% depth.
+
+        Each spell component has an affinity.  Components of the same affinity as you will cost less mana, and depending on your affinity depth (how far into the affinity you are), may not even cost reagents.  Components of the opposing affinity, however, will cost more mana and again, depending on your affinity depth, may cost additional reagents.  Affinities offer specific bonuses and disadvantages, described on the affinity-specific pages.
+      </desc>
       <subitem id="earth_affinity">
         <name>Earth Affinity</name>
         <desc>
-					Earth affinity grants a minor defense bonus, due to your hardened skin.  At max, you will have 10% overall damage reduction, applied before armor.  This amount depends on your affinity depth into earth, and begins at 25% depth.
-					!d
-					With earth affinity, you are heavier, and as such you will sink more quickly in water (though never enough that you cannot surface), and you cannot fall as far without taking fall damage.
-				</desc>
+          Earth affinity grants a minor defense bonus, due to your hardened skin.  At max, you will have 10% overall damage reduction, applied before armor.  This amount depends on your affinity depth into earth, and begins at 25% depth.
+          !d
+          With earth affinity, you are heavier, and as such you will sink more quickly in water (though never enough that you cannot surface), and you cannot fall as far without taking fall damage.
+        </desc>
         <relatedEntries></relatedEntries>
       </subitem>
       <subitem id="water_affinity">
         <name>Water Affinity</name>
         <desc>
-					Water affinity grants a bonus to swim speed as well as slower breath loss underwater.  You are also not pushed by flowing water.  Endermen that attack a full water-affinity mage will take damage as if they had touched water.
-					!d
-					Water affinity mages take damage periodically if exposed to fire, making the nether particularly dangerous.  This damage will not take you below 75% health, and will not occur at all if you are lower.
-				</desc>
+          Water affinity grants a bonus to swim speed as well as slower breath loss underwater.  You are also not pushed by flowing water.  Endermen that attack a full water-affinity mage will take damage as if they had touched water.
+          !d
+          Water affinity mages take damage periodically if exposed to fire, making the nether particularly dangerous.  This damage will not take you below 75% health, and will not occur at all if you are lower.
+        </desc>
         <relatedEntries></relatedEntries>
       </subitem>
       <subitem id="air_affinity">
         <name>Air Affinity</name>
         <desc>
-					Air affinity grants a bonus to jump height and lets you fall farther before taking damage.  These bonuses are dependent on your affinity depth: you can jump one block higher and fall one block farther at 50% depth.  This bonus increases to 2 at 75%, and 3 at full depth.
-					!d
-					Air affinity mages are hindered by rain and storms; the wind blows you around and you must move slower.  #5Sneaking#0 or casting a spell of #5Gravity Well#0 can negate the effect and allow you to move in the storm, albeit slowly.
-				</desc>
+          Air affinity grants a bonus to jump height and lets you fall farther before taking damage.  These bonuses are dependent on your affinity depth: you can jump one block higher and fall one block farther at 50% depth.  This bonus increases to 2 at 75%, and 3 at full depth.
+          !d
+          Air affinity mages are hindered by rain and storms; the wind blows you around and you must move slower.  #5Sneaking#0 or casting a spell of #5Gravity Well#0 can negate the effect and allow you to move in the storm, albeit slowly.
+        </desc>
         <relatedEntries></relatedEntries>
       </subitem>
       <subitem id="fire_affinity">
         <name>Fire Affinity</name>
         <desc>
-					Fire affinity grants damage reduction in fire and lava, though never complete immunity.  The protection is directly related to your affinity depth, and reaches 60% reduction at full depth.  Punching enemies at full affinity will light them on fire.
-					!d
-					Once your fire affinity reaches 50%, you will start to take damage periodically when touching water sources.  This damage will not take you down below 75% health and will not occur if lower.
-				</desc>
+          Fire affinity grants damage reduction in fire and lava, though never complete immunity.  The protection is directly related to your affinity depth, and reaches 60% reduction at full depth.  Punching enemies at full affinity will light them on fire.
+          !d
+          Once your fire affinity reaches 50%, you will start to take damage periodically when touching water sources.  This damage will not take you down below 75% health and will not occur if lower.
+        </desc>
         <relatedEntries></relatedEntries>
       </subitem>
       <subitem id="nature_affinity">
         <name>Nature Affinity</name>
         <desc>
-					Nature affinity gives you additional seeds and saplings when harvesting plants from around the world.  At 50% depth, you will gain the Thorns effect, causing melee attackers to take damage (similar to the armor enchant).  This damage increases at 75% affinity and at full affinity.  At full nature affinity you also slowly regenerate hunger in direct sunlight.  At full nature affinity, you can extend roots into the ground, allowing you to climb certain surfaces like a spider does.
-					!d
-					Nature affinity causes you to move slightly slower due to your roots. At full nature affinity depth, you lose hunger more quickly at night or in dark areas.
-					!d
-					At full nature affinity, you gain the aspect of a leaf on the wind, negating all fall damage and falling more slowly.  You can sneak to fall at normal speed.  This will still cause fall damage to be negated.
-				</desc>
+          Nature affinity gives you additional seeds and saplings when harvesting plants from around the world.  At 50% depth, you will gain the Thorns effect, causing melee attackers to take damage (similar to the armor enchant).  This damage increases at 75% affinity and at full affinity.  At full nature affinity you also slowly regenerate hunger in direct sunlight.  At full nature affinity, you can extend roots into the ground, allowing you to climb certain surfaces like a spider does.
+          !d
+          Nature affinity causes you to move slightly slower due to your roots. At full nature affinity depth, you lose hunger more quickly at night or in dark areas.
+          !d
+          At full nature affinity, you gain the aspect of a leaf on the wind, negating all fall damage and falling more slowly.  You can sneak to fall at normal speed.  This will still cause fall damage to be negated.
+        </desc>
         <relatedEntries></relatedEntries>
       </subitem>
       <subitem id="ice_affinity">
         <name>Ice Affinity</name>
         <desc>
-					Ice affinity causes attackers to be slowed.  At 50% depth, while sneaking you will freeze water to ice in front of you, allowing you to make bridges as you move.  At 100% depth, you can freeze lava to obsidian.
-					!d
-					All ice mages move slightly slower due to being cold blooded, unless on ice or water.
-				</desc>
+          Ice affinity causes attackers to be slowed.  At 50% depth, while sneaking you will freeze water to ice in front of you, allowing you to make bridges as you move.  At 100% depth, you can freeze lava to obsidian.
+          !d
+          All ice mages move slightly slower due to being cold blooded, unless on ice or water.
+        </desc>
         <relatedEntries></relatedEntries>
       </subitem>
       <subitem id="lightning_affinity">
         <name>Lightning Affinity</name>
         <desc>
-					Lightning affinity causes you to run faster.  The speed increase is directly related to your affinity depth, ranging from 1 to 30%.  At 50% depth, you gain the ability to step up over one block high ledges.
-					!d
-					Unfortunately due to your affinity you are also sort of short out in water. You can also light nearby TNT and supercharge nearby creepers!  Don't worry though, as you gain more control over your electric nature, you will be able to reduce the TNT and Creeper effects.
-				</desc>
+          Lightning affinity causes you to run faster.  The speed increase is directly related to your affinity depth, ranging from 1 to 30%.  At 50% depth, you gain the ability to step up over one block high ledges.
+          !d
+          Unfortunately due to your affinity you are also sort of short out in water. You can also light nearby TNT and supercharge nearby creepers!  Don't worry though, as you gain more control over your electric nature, you will be able to reduce the TNT and Creeper effects.
+        </desc>
         <relatedEntries></relatedEntries>
       </subitem>
       <subitem id="life_affinity">
         <name>Life Affinity</name>
         <desc>
-					Life affinity causes you to very slowly regenerate additional life.  The regen speed is directly related to your depth.  This regen happens regardless of your hunger level.
-					!d
-					Due to your close ties with life, any time you kill something it makes you sick and nauseated for a while.
-				</desc>
+          Life affinity causes you to very slowly regenerate additional life.  The regen speed is directly related to your depth.  This regen happens regardless of your hunger level.
+          !d
+          Due to your close ties with life, any time you kill something it makes you sick and nauseated for a while.
+        </desc>
         <relatedEntries></relatedEntries>
       </subitem>
       <subitem id="arcane_affinity">
         <name>Arcane Affinity</name>
         <desc>
-					Arcane affinity causes all spells to cost 5% less mana, in addition to other mana reductions.  At full depth, there is also a chance that upon casting a spell, you will gain the clarity effect, causing your next spell to cost 0 mana.
-					!d
-					As a disadvantage, all magical damage sources do more damage to you.
-				</desc>
+          Arcane affinity causes all spells to cost 5% less mana, in addition to other mana reductions.  At full depth, there is also a chance that upon casting a spell, you will gain the clarity effect, causing your next spell to cost 0 mana.
+          !d
+          As a disadvantage, all magical damage sources do more damage to you.
+        </desc>
         <relatedEntries></relatedEntries>
       </subitem>
       <subitem id="ender_affinity">
         <name>Ender Affinity</name>
         <desc>
-					Ender affinity gives you poison resistance at 50% depth, and at 75% depth you gain night vision automatically in dark areas.  At full ender affinity, Endermen will not attack you, unless you attack them first.
-					!d
-					Due to your dark nature, your maximum health is reduced in light, and at higher ender affinity, it is reduced in water as well.  Masters of the ender are rumored to have evolved beyond this weakness.
-				</desc>
+          Ender affinity gives you poison resistance at 50% depth, and at 75% depth you gain night vision automatically in dark areas.  At full ender affinity, Endermen will not attack you, unless you attack them first.
+          !d
+          Due to your dark nature, your maximum health is reduced in light, and at higher ender affinity, it is reduced in water as well.  Masters of the ender are rumored to have evolved beyond this weakness.
+        </desc>
         <relatedEntries></relatedEntries>
       </subitem>
       <relatedEntries></relatedEntries>
@@ -2644,7 +2644,7 @@
     </mechanic>
     <mechanic id="armor_xp_infusion">
       <name>Armor XP Infusion</name>
-      <desc>Whenever you gain XP, any equipped AM armor will gain some too.  The amount gained is equal to the total amount of XP you just gained divided evenly among all equipped armor pieces.  AM armor can gain XP.  Stored armor XP can be used at an #9Armor Imbuement Table#0.</desc>
+      <desc>Whenever you gain XP, any equipped armor will gain some too.  The amount gained is equal to the total amount of XP you just gained divided evenly among all equipped armor pieces.  Any armor can gain XP.  Stored armor XP can be used at an #9Armor Imbuement Table#0.</desc>
       <relatedEntries>armor_infuser</relatedEntries>
     </mechanic>
     <mechanic id="silver_skills">
@@ -2674,7 +2674,7 @@
       <name>Your First Spell</name>
       <desc>To make a spell, you will first need to create an #5Occulus#0 and unlock at least one spell shape and one component.  You start with three blue skill points to make this possible.  Then, craft a writable book and head over to your #5Inscription Table#0.  Place the book in the inscription table. !d There are three sections of the Inscription Table UI that are of note.  The source region is the large grey square at the top, and will contain all of your known shapes, components, and modifiers.  The Shape Group section is identified by brown squares.  There are multiple brown squares as multiple shape groups can be created.  Finally there is the Spell Grammar section, which is the gray rectangle at the bottom.  !d Create #5Shape Groups#0 by dragging shapes and/or modifiers from the source region to any of the shape groups in the UI.  You can create multiple shape groups in the same spell, three by default.  Each shape group can have up to four shapes/modifiers.  Shape groups cannot contain components. A good way to think about it is that shape groups are different means of targeting things with the spell, then the spell grammar is what the spell actually does. !d Once your shape groups are created, drag the spell parts you want, in order, from the source region to the spell grammar section. The spell grammar section can contain spell shapes, components, and modifiers in addition to the shape groups.  Once your combination is completed, go to your #5Crafting Altar#0 and place your book containing the spell recipe on the lectern.  Throw a #5blank rune#0 into the middle of the crafting altar to begin the process, then follow the book's prompts.  The book itself is worth reading as well, as it contains a recap of what the spell recipe is for, the materials list for the spell and an affinity breakdown of the spell.  Note that certain crafting altars can only craft spells that are so powerful.  Too much power and bad things can happen.  See the entry on the #5Crafting Altar#0 for more information.</desc>
     </guide>
-	<guide id="aFewSpells" order="4" unlocked="true">
+    <guide id="aFewSpells" order="4" unlocked="true">
       <name>A Few Recommended Spells</name>
       <desc>When starting out, it's recommended to make sure you take at least one #9Shape#0 and one #9Component#0 in the Occulus, lest you find yourself unable to make any spells.  If you do this, you can either go looking in dungeons for #9Infinity Orbs#0, or try to fight a boss or two to get some more.  If you're feeling cheaty, you can also use the /respec command. !p Here are a few sample spells to get you started: !d Basic Defense: !l Projectile + Physical Damage !d Stay Alive: !l Self + Regeneration !d Time to Mine: !l Touch/Projectile + Dig !d Clear Leaves: !l Projectile + Wizard's Autumn !d Fast Travel: !l Self/Projectile + Leap + Slowfall + Haste + Gravity Well</desc>
     </guide>
