@@ -12,13 +12,39 @@ buildscript {
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'de.undercouch:gradle-download-task:3.2.0'
+        //classpath "com.wynprice.cursemaven:CurseMaven:2.1.1"
+    }
+}
+
+// Because Forge is too stupid to fix Deprecation Issues, and we cannot fix it on our end! (until we fork Forge)
+allprojects {
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xlint:deprecation"
+    }
+}
+
+apply plugin: 'eclipse'
+eclipse {
+    classpath {
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
+
+apply plugin: 'idea'
+idea {
+    module {
+        downloadJavadoc = true
+        downloadSources = true
     }
 }
 
 apply plugin: 'forge'
+//apply plugin: "com.wynprice.cursemaven"
 
 version = "1.4.3"
-group= "am2" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = "am2" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "AM2"
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -30,10 +56,10 @@ minecraft {
 }
 
 jar {
-	manifest {
-		attributes 'FMLCorePlugin' : 'am2.preloader.AM2PreloaderContainer'
-		attributes 'FMLCorePluginContainsFMLMod' : 'true'
-	}
+    manifest {
+        attributes 'FMLCorePlugin': 'am2.preloader.AM2PreloaderContainer'
+        attributes 'FMLCorePluginContainsFMLMod': 'true'
+    }
 }
 
 dependencies {
@@ -41,24 +67,24 @@ dependencies {
 }
 
 processResources
-{
-    // this will ensure that this task is redone when the versions change.
-    inputs.property "version", project.version
-    inputs.property "mcversion", project.minecraft.version
+        {
+            // this will ensure that this task is redone when the versions change.
+            inputs.property "version", project.version
+            inputs.property "mcversion", project.minecraft.version
 
-    // replace stuff in mcmod.info, nothing else
-    from(sourceSets.main.resources.srcDirs) {
-        include 'mcmod.info'
+            // replace stuff in mcmod.info, nothing else
+            from(sourceSets.main.resources.srcDirs) {
+                include 'mcmod.info'
 
-        // replace version and mcversion
-        expand (
-                'version': project.version,
-                'mcversion': project.minecraft.version
-        )
-    }
+                // replace version and mcversion
+                expand(
+                        'version': project.version,
+                        'mcversion': project.minecraft.version
+                )
+            }
 
-    // copy everything else, thats not the mcmod.info
-    from(sourceSets.main.resources.srcDirs) {
-        exclude 'mcmod.info'
-    }
-}
+            // copy everything else, thats not the mcmod.info
+            from(sourceSets.main.resources.srcDirs) {
+                exclude 'mcmod.info'
+            }
+        }
